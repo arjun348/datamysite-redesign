@@ -479,6 +479,122 @@ button,input,textarea{font:inherit}
     }
 }
 </style>
+<style>
+/* Hero form entrance animation */
+.hero-form {
+    animation: hero-form-enter 0.9s cubic-bezier(.22, 1, .36, 1) both;
+    transform-origin: center;
+}
+
+@keyframes hero-form-enter {
+    from {
+        opacity: 0;
+        transform: translateY(35px) scale(.97);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Subtle form highlight */
+.hero-form {
+    animation:
+        hero-form-enter .9s cubic-bezier(.22, 1, .36, 1) both,
+        hero-form-glow 4s ease-in-out 1s infinite;
+}
+
+@keyframes hero-form-glow {
+    0%, 100% {
+        box-shadow: 0 10px 35px rgba(11, 74, 58, .08);
+    }
+    50% {
+        box-shadow: 0 15px 40px rgba(11, 74, 58, .18);
+    }
+}
+
+/* Heading animation */
+.hero-form h2 {
+    animation: hero-content-enter .6s ease .2s both;
+}
+
+/* Description */
+.hero-form > p {
+    animation: hero-content-enter .6s ease .3s both;
+}
+
+/* Input and textarea animations */
+.hero-form .field {
+    animation: hero-content-enter .6s ease both;
+    transition: border-color .3s ease, box-shadow .3s ease, background .3s ease;
+}
+
+.hero-form .field:nth-of-type(1) {
+    animation-delay: .35s;
+}
+
+.hero-form .field:nth-of-type(2) {
+    animation-delay: .45s;
+}
+
+.hero-form .field:nth-of-type(3) {
+    animation-delay: .55s;
+}
+
+.hero-form .field:nth-of-type(4) {
+    animation-delay: .65s;
+}
+
+@keyframes hero-content-enter {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Input focus effect */
+.hero-form .field:focus {
+    outline: none;
+    border-color: #0B4A3A;
+    box-shadow: 0 0 0 3px rgba(11, 74, 58, .12);
+}
+
+/* Button hover effect */
+.hero-form .get-free-consultation {
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.hero-form .get-free-consultation:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(11, 74, 58, .22);
+}
+
+/* Trust indicators */
+.hero-form .form1-trust {
+    animation: hero-content-enter .7s ease .75s both;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .hero-form,
+    .hero-form h2,
+    .hero-form > p,
+    .hero-form .field,
+    .hero-form .form1-trust {
+        animation: none !important;
+        opacity: 1;
+        transform: none;
+    }
+
+    .hero-form .get-free-consultation {
+        transition: none;
+    }
+}
+</style>
 </head>
 
 <body>
