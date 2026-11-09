@@ -259,7 +259,7 @@ button,input,textarea{font:inherit}
 .stars{color:#e2a52b;letter-spacing:2px}
 .review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .review-card{padding:24px;border:1px solid var(--line);background:#fff}
-.review-card p{font-size:14px;color:var(--muted);margin:12px 0 20px}
+.review-card p{font-size:14px;color:#3c4043;margin:12px 0 20px}
 .review-card strong{color:var(--navy)}
 .review-card small{display:block;color:var(--muted)}
 
@@ -283,9 +283,9 @@ button,input,textarea{font:inherit}
 .faq-layout{display:grid;grid-template-columns:260px 1fr;gap:35px}
 .faq-filters{display:flex;flex-direction:column;gap:7px}
 .filter{border:1px solid var(--line);background:#fff;text-align:left;padding:12px 14px;display:flex;justify-content:space-between;gap:10px;cursor:pointer;color:var(--muted);border-radius:3px;font-size:13px}
-.filter span{color:var(--red);font-weight:800}
+.filter span{color:var(--green);font-weight:700}
 .filter.active,.filter:hover{background:var(--green);border-color:var(--green);color:#fff}
-.filter.active span,.filter:hover span{color:#f1a49d}
+.filter.active span,.filter:hover span{color:#fff}
 .faq-search{width:100%;padding:14px 16px;border:1px solid var(--line);margin-bottom:16px;border-radius:3px}
 .faq-item{border-bottom:1px solid var(--line)}
 .faq-question{width:100%;display:grid;grid-template-columns:38px 1fr 28px;gap:14px;align-items:center;text-align:left;padding:20px 4px;border:0;background:#fff;cursor:pointer;color:var(--navy)}
@@ -1743,31 +1743,26 @@ button,input,textarea{font:inherit}
             <span class="eyebrow">CLIENT TESTIMONIALS</span>
 
             <div class="section-head">
-              <h2>Trusted by Businesses Across Dubai & UAE</h2>
+              <h2>Trusted by Businesses Across <span>Dubai & UAE</span></h2>
 
-            <!-- <p>
-                Real experiences from businesses that trust DataMySite
-                to strengthen their brand visibility and growth.
-            </p> -->
+              <a
+                  href="https://www.google.com/maps/place/DMS+-+DataMySite+Marketing/@24.9978253,55.1727716,936m/data=!3m1!1e3!4m8!3m7!1s0x3e5f7347c3a1a1d1:0xad7a49fd99d3061!8m2!3d24.9978253!4d55.1727716!9m1!1b1!16s%2Fg%2F11ybf42kl_?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="google-rating"
+              >
+                  <svg class="rc-g google-icon" viewBox="0 0 24 24"><path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"></path><path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"></path><path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"></path><path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"></path></svg>
 
-            <a
-                href="https://www.google.com/maps/place/DMS+-+DataMySite+Marketing/@24.9978253,55.1727716,936m/data=!3m1!1e3!4m8!3m7!1s0x3e5f7347c3a1a1d1:0xad7a49fd99d3061!8m2!3d24.9978253!4d55.1727716!9m1!1b1!16s%2Fg%2F11ybf42kl_?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="google-rating"
-            >
-                <div class="google-rating-logo">G</div>
+                  <div class="google-rating-info">
+                      <div class="google-rating-top">
+                          <strong>5.0</strong>
+                          <span class="rating-stars">★★★★★</span>
+                      </div>
+                      <span>Based on 46 Google reviews</span>
+                  </div>
 
-                <div class="google-rating-info">
-                    <div class="google-rating-top">
-                        <strong>5.0</strong>
-                        <span class="rating-stars">★★★★★</span>
-                    </div>
-                    <span>Based on 46 Google reviews</span>
-                </div>
-
-                <span class="rating-link">View reviews ↗</span>
-            </a>
+                  <span class="rating-link">View reviews ↗</span>
+              </a>
             </div>
         </div>
 
@@ -1798,6 +1793,13 @@ button,input,textarea{font:inherit}
                 <div class="review-track">
 
                     <article class="review-card">
+                        <div class="review-author">
+                            <div class="review-avatar">AM</div>
+                            <div>
+                                <strong>Ahmed Al Mansoori</strong>
+                                <span>2 months ago</span>
+                            </div>
+                        </div>
                         <div class="review-card-top">
                             <span class="review-source">Google Review</span>
                             <span class="review-stars">★★★★★</span>
@@ -1810,16 +1812,16 @@ button,input,textarea{font:inherit}
                             the results exceeded our expectations. Highly
                             professional and responsive team!
                         </p>
-                        <div class="review-author">
-                            <div class="review-avatar">AM</div>
-                            <div>
-                                <strong>Ahmed Al Mansoori</strong>
-                                <span>2 months ago</span>
-                            </div>
-                        </div>
                     </article>
 
                     <article class="review-card">
+                        <div class="review-author">
+                            <div class="review-avatar">SH</div>
+                            <div>
+                                <strong>Sara Hassan</strong>
+                                <span>3 months ago</span>
+                            </div>
+                        </div>
                         <div class="review-card-top">
                             <span class="review-source">Google Review</span>
                             <span class="review-stars">★★★★★</span>
@@ -1832,16 +1834,16 @@ button,input,textarea{font:inherit}
                             influencers to pair with each brand. Our product
                             sold out within weeks of the campaign going live.
                         </p>
-                        <div class="review-author">
-                            <div class="review-avatar">SH</div>
-                            <div>
-                                <strong>Sara Hassan</strong>
-                                <span>3 months ago</span>
-                            </div>
-                        </div>
                     </article>
 
                     <article class="review-card">
+                        <div class="review-author">
+                            <div class="review-avatar">MT</div>
+                            <div>
+                                <strong>Mohammed Tariq</strong>
+                                <span>4 months ago</span>
+                            </div>
+                        </div>
                         <div class="review-card-top">
                             <span class="review-source">Google Review</span>
                             <span class="review-stars">★★★★★</span>
@@ -1855,16 +1857,16 @@ button,input,textarea{font:inherit}
                             and the backlinks have boosted our SEO rankings
                             significantly.
                         </p>
-                        <div class="review-author">
-                            <div class="review-avatar">MT</div>
-                            <div>
-                                <strong>Mohammed Tariq</strong>
-                                <span>4 months ago</span>
-                            </div>
-                        </div>
                     </article>
 
                     <article class="review-card">
+                        <div class="review-author">
+                            <div class="review-avatar">RS</div>
+                            <div>
+                                <strong>Riya Sharma</strong>
+                                <span>5 months ago</span>
+                            </div>
+                        </div>
                         <div class="review-card-top">
                             <span class="review-source">Google Review</span>
                             <span class="review-stars">★★★★★</span>
@@ -1877,16 +1879,16 @@ button,input,textarea{font:inherit}
                             Within 3 weeks we saw a 40% spike in website traffic
                             from Dubai. Very impressed!
                         </p>
-                        <div class="review-author">
-                            <div class="review-avatar">RS</div>
-                            <div>
-                                <strong>Riya Sharma</strong>
-                                <span>5 months ago</span>
-                            </div>
-                        </div>
                     </article>
 
                     <article class="review-card">
+                        <div class="review-author">
+                            <div class="review-avatar">KR</div>
+                            <div>
+                                <strong>Khalid Al Rashid</strong>
+                                <span>6 months ago</span>
+                            </div>
+                        </div>
                         <div class="review-card-top">
                             <span class="review-source">Google Review</span>
                             <span class="review-stars">★★★★★</span>
@@ -1899,16 +1901,16 @@ button,input,textarea{font:inherit}
                             all channels was seamless and results were beyond
                             expectations. Will definitely work with them again.
                         </p>
-                        <div class="review-author">
-                            <div class="review-avatar">KR</div>
-                            <div>
-                                <strong>Khalid Al Rashid</strong>
-                                <span>6 months ago</span>
-                            </div>
-                        </div>
                     </article>
 
                     <article class="review-card">
+                        <div class="review-author">
+                            <div class="review-avatar">NA</div>
+                            <div>
+                                <strong>Nadia Al Farsi</strong>
+                                <span>7 months ago</span>
+                            </div>
+                        </div>
                         <div class="review-card-top">
                             <span class="review-source">Google Review</span>
                             <span class="review-stars">★★★★★</span>
@@ -1921,16 +1923,16 @@ button,input,textarea{font:inherit}
                             backlinks. We went from page 4 to page 1 on Google
                             in less than 3 months. Highly recommend!
                         </p>
-                        <div class="review-author">
-                            <div class="review-avatar">NA</div>
-                            <div>
-                                <strong>Nadia Al Farsi</strong>
-                                <span>7 months ago</span>
-                            </div>
-                        </div>
                     </article>
 
                     <article class="review-card">
+                        <div class="review-author">
+                            <div class="review-avatar">FM</div>
+                            <div>
+                                <strong>Faisal Mahmood</strong>
+                                <span>8 months ago</span>
+                            </div>
+                        </div>
                         <div class="review-card-top">
                             <span class="review-source">Google Review</span>
                             <span class="review-stars">★★★★★</span>
@@ -1943,16 +1945,16 @@ button,input,textarea{font:inherit}
                             media. Communication was excellent throughout and
                             delivery was always on time. 100% recommend.
                         </p>
-                        <div class="review-author">
-                            <div class="review-avatar">FM</div>
-                            <div>
-                                <strong>Faisal Mahmood</strong>
-                                <span>8 months ago</span>
-                            </div>
-                        </div>
                     </article>
 
                     <article class="review-card">
+                        <div class="review-author">
+                            <div class="review-avatar">LB</div>
+                            <div>
+                                <strong>Layla Benali</strong>
+                                <span>9 months ago</span>
+                            </div>
+                        </div>
                         <div class="review-card-top">
                             <span class="review-source">Google Review</span>
                             <span class="review-stars">★★★★★</span>
@@ -1965,16 +1967,17 @@ button,input,textarea{font:inherit}
                             hospitality brand and managed everything
                             professionally. A truly full-service agency.
                         </p>
-                        <div class="review-author">
-                            <div class="review-avatar">LB</div>
-                            <div>
-                                <strong>Layla Benali</strong>
-                                <span>9 months ago</span>
-                            </div>
-                        </div>
                     </article>
 
                     <article class="review-card">
+                      
+                        <div class="review-author">
+                            <div class="review-avatar">OQ</div>
+                            <div>
+                                <strong>Omar Qureshi</strong>
+                                <span>10 months ago</span>
+                            </div>
+                        </div>
                         <div class="review-card-top">
                             <span class="review-source">Google Review</span>
                             <span class="review-stars">★★★★★</span>
@@ -1987,13 +1990,6 @@ button,input,textarea{font:inherit}
                             spots that were exactly what our campaign needed,
                             and the creative production quality was top notch.
                         </p>
-                        <div class="review-author">
-                            <div class="review-avatar">OQ</div>
-                            <div>
-                                <strong>Omar Qureshi</strong>
-                                <span>10 months ago</span>
-                            </div>
-                        </div>
                     </article>
 
                 </div>
@@ -2033,6 +2029,11 @@ button,input,textarea{font:inherit}
           margin: 16px 0;
           letter-spacing: -1.2px;
           max-width: 450px;
+      }
+
+      .testimonials-heading h2 span {
+          color: #E04B43;
+          font-style: italic;
       }
 
       .testimonials-heading > p {
@@ -2094,6 +2095,11 @@ button,input,textarea{font:inherit}
       .google-rating-top strong {
           font-size: 19px;
           color: #17263F;
+      }
+      
+      .google-icon {
+          width: 30px;
+          height: 30px;
       }
 
       .rating-stars {
@@ -2229,19 +2235,20 @@ button,input,textarea{font:inherit}
 
       .review-stars {
           color: #F4B400;
-          font-size: 15px;
+          font-size: 20px;
+          margin-top: 5px;
           letter-spacing: 2px;
           white-space: nowrap;
       }
 
       .review-quote-mark {
-          color: #E04B43;
-          font-family: Georgia, serif;
-          font-size: 65px;
-          line-height: .9;
-          height: 50px;
-          margin-top: 20px;
-          opacity: .85;
+        color: #E04B43;
+        font-family: Georgia, serif;
+        font-size: 79px;
+        line-height: .9;
+        height: 30px;
+        margin-top: 12px;
+        opacity: .85;
       }
 
       .review-text {
@@ -2256,8 +2263,8 @@ button,input,textarea{font:inherit}
           display: flex;
           align-items: center;
           gap: 12px;
-          padding-top: 18px;
-          border-top: 1px solid #edf0ed;
+          /* padding-top: 18px;
+          border-top: 1px solid #edf0ed; */
       }
 
       .review-avatar {
@@ -2270,8 +2277,8 @@ button,input,textarea{font:inherit}
           border-radius: 50%;
           background: #eaf1ed;
           color: #12453A;
-          font-size: 13px;
-          font-weight: 800;
+          font-size: 18px;
+          font-weight: 700;
           transition: background .3s ease, color .3s ease;
       }
 
@@ -2424,6 +2431,78 @@ button,input,textarea{font:inherit}
               transition-duration: .01ms !important;
           }
       }
+
+      .review-indicator {
+          width: 8px;
+          height: 8px;
+          background: #12453A;
+          border-radius: 50%;
+          box-shadow: 0 0 0 5px rgba(18, 69, 58, .10);
+          animation: greenBlink 1.8s ease-in-out infinite;
+      }
+
+      @keyframes greenBlink {
+          0%, 100% {
+              box-shadow: 0 0 0 5px rgba(18, 69, 58, .10);
+              opacity: 1;
+          }
+          50% {
+              box-shadow: 0 0 0 9px rgba(18, 69, 58, .02);
+              opacity: .55;
+          }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+          .review-indicator {
+              animation: none;
+          }
+      }
+
+      .google-rating {
+          animation: ratingFloat 2.5s ease-in-out infinite;
+      }
+
+      @keyframes ratingFloat {
+          0%, 100% {
+              transform: translateY(0);
+          }
+          50% {
+              transform: translateY(7px);
+          }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+          .google-rating {
+              animation: none;
+          }
+      }
+
+      .review-source {
+        display: none;
+      }
+
+      .review-avatar {
+          color: #fff !important;
+          background: var(--avatar-color, #12453A) !important;
+      }
+
+      /* Individual avatar colours */
+      .review-card:nth-child(1) .review-avatar { --avatar-color: #12453A; }
+      .review-card:nth-child(2) .review-avatar { --avatar-color: #E04B43; }
+      .review-card:nth-child(3) .review-avatar { --avatar-color: #345995; }
+      .review-card:nth-child(4) .review-avatar { --avatar-color: #8B5E83; }
+      .review-card:nth-child(5) .review-avatar { --avatar-color: #C07832; }
+      .review-card:nth-child(6) .review-avatar { --avatar-color: #287C78; }
+      .review-card:nth-child(7) .review-avatar { --avatar-color: #6256A5; }
+      .review-card:nth-child(8) .review-avatar { --avatar-color: #A64D79; }
+      .review-card:nth-child(9) .review-avatar { --avatar-color: #536878; }
+
+      .review-card:hover .review-avatar {
+          color: #fff !important;
+          background: var(--avatar-color) !important;
+          transform: scale(1.08);
+      }
+
 
     </style>
 
@@ -2660,117 +2739,1119 @@ button,input,textarea{font:inherit}
   <div class="container">
     <div class="section-head">
       <div>
-        <span class="eyebrow">INSIGHTS &amp; IDEAS</span>
-        <h2>Latest From Our Blog</h2>
-        <p>Marketing insights and practical ideas for businesses in Dubai and across the UAE.</p>
+        <span class="eyebrow">BLOGS</span>
+        <h2>What’s Going On in the Industry?</h2>
       </div>
       <a class="text-link" href="https://datamysite.com/blogs">View all blogs ↗</a>
     </div>
 
     <div class="blog-grid">
       <article class="blog-card">
-        <img src="https://datamysite.com/public/assets/img/blog/marketing-budget.jpg" alt="Marketing Budget Benchmarks" loading="lazy">
+        <img src="https://datamysite.com/public/storage/blogs/970261026030812.webp" alt="Marketing Budget Benchmarks" loading="lazy">
         <div><span class="eyebrow">MARKETING</span><h3>Marketing Budget Benchmarks for Dubai Businesses in 2026</h3><p>Understand how businesses can plan and allocate their marketing budgets in a competitive market.</p><a class="text-link" href="https://datamysite.com/blogs">Read more ↗</a></div>
       </article>
       <article class="blog-card">
-        <img src="https://datamysite.com/public/assets/img/blog/advertising-agencies.jpg" alt="Advertising Agencies in Dubai" loading="lazy">
+        <img src="https://datamysite.com/public/storage/blogs/969261026030701.jfif" alt="Advertising Agencies in Dubai" loading="lazy">
         <div><span class="eyebrow">ADVERTISING</span><h3>Top Advertising Agencies in Dubai (2026): Who Does What Best</h3><p>A look at advertising services and the capabilities businesses should consider when choosing an agency.</p><a class="text-link" href="https://datamysite.com/blogs">Read more ↗</a></div>
       </article>
       <article class="blog-card">
-        <img src="https://datamysite.com/public/assets/img/blog/influencer-marketing.jpg" alt="Influencer versus Celebrity Marketing" loading="lazy">
+        <img src="https://datamysite.com/public/storage/blogs/968261026030603.jfif" alt="Influencer versus Celebrity Marketing" loading="lazy">
         <div><span class="eyebrow">INFLUENCER MARKETING</span><h3>Influencer vs Celebrity Marketing: Which Wins in the UAE</h3><p>Explore the differences between influencer and celebrity partnerships and how to choose a suitable approach.</p><a class="text-link" href="https://datamysite.com/blogs">Read more ↗</a></div>
       </article>
     </div>
   </div>
 </section>
 
-<section class="section audit-section">
-  <div class="container audit-inner">
-    <div>
-      <span class="eyebrow">ZERO-COST SEO AUDIT</span>
-      <h2>Know Your Rank. Improve.</h2>
-      <p>Understand your website's search performance and identify opportunities to improve visibility, technical health and organic traffic.</p>
-      <a class="btn" href="https://datamysite.com/seo-services">Explore SEO Services →</a>
-    </div>
-    <div class="audit-card">
-      <h3>Request Your Free SEO Audit</h3>
-      <p>Share your website details and our team can review your SEO opportunities.</p>
-      <form class="preview-form">
-        <input class="field" type="text" placeholder="Your Name" required>
-        <input class="field" type="email" placeholder="Email Address" required>
-        <input class="field" type="url" placeholder="Website URL" required>
-        <button class="btn" type="submit">Request SEO Audit →</button>
-        <small class="form-preview-message">Design preview only — form does not submit.</small>
-      </form>
-    </div>
-  </div>
-</section>
+<style>
+  /* Blog section */
+  #blogs {
+      overflow: hidden;
+  }
+
+  #blogs .section-head {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: opacity .7s ease, transform .7s ease;
+  }
+
+  #blogs .blog-card {
+      opacity: 0;
+      transform: translateY(35px);
+      transition:
+          opacity .7s ease,
+          transform .7s ease,
+          box-shadow .35s ease,
+          border-color .35s ease;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 5px 22px rgba(23, 38, 63, .05);
+  }
+
+  #blogs .section-head.blog-visible,
+  #blogs .blog-card.blog-visible {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+  /* Staggered reveal */
+  #blogs .blog-card:nth-child(2) {
+      transition-delay: .15s;
+  }
+
+  #blogs .blog-card:nth-child(3) {
+      transition-delay: .3s;
+  }
+
+  /* Image zoom */
+  #blogs .blog-card img {
+      display: block;
+      width: 100%;
+      transition: transform .65s cubic-bezier(.2, .7, .3, 1);
+  }
+
+  #blogs .blog-card:hover img {
+      transform: scale(1.06);
+  }
+
+  /* Card hover */
+  #blogs .blog-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 38px rgba(23, 38, 63, .12);
+      border-color: rgba(18, 69, 58, .18);
+  }
+
+  /* Card content */
+  #blogs .blog-card > div {
+      padding: 23px;
+  }
+
+  #blogs .blog-card h3 {
+      transition: color .3s ease;
+  }
+
+  #blogs .blog-card:hover h3 {
+      color: #12453A;
+  }
+
+  /* Read more animation */
+  #blogs .blog-card .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: color .25s ease, gap .25s ease;
+  }
+
+  #blogs .blog-card .text-link:hover {
+      color: #E04B43;
+      gap: 10px;
+  }
+
+  /* View all link */
+  #blogs .section-head > .text-link {
+      transition: color .25s ease, transform .25s ease;
+  }
+
+  #blogs .section-head > .text-link:hover {
+      color: #E04B43;
+      transform: translateX(4px);
+  }
+
+  /* Accessibility */
+  @media (prefers-reduced-motion: reduce) {
+      #blogs *,
+      #blogs *::before,
+      #blogs *::after {
+          animation: none !important;
+          transition: none !important;
+          transform: none !important;
+      }
+
+      #blogs .section-head,
+      #blogs .blog-card {
+          opacity: 1;
+      }
+  }
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const blogSection = document.querySelector('#blogs');
+
+    if (!blogSection) return;
+
+    const heading = blogSection.querySelector('.section-head');
+    const cards = blogSection.querySelectorAll('.blog-card');
+
+    if (!('IntersectionObserver' in window)) {
+        heading?.classList.add('blog-visible');
+        cards.forEach(card => card.classList.add('blog-visible'));
+        return;
+    }
+
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+
+            if (entry.target === blogSection) {
+                heading?.classList.add('blog-visible');
+
+                cards.forEach((card, index) => {
+                    setTimeout(() => {
+                        card.classList.add('blog-visible');
+                    }, index * 150);
+                });
+
+                observer.unobserve(blogSection);
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+
+    observer.observe(blogSection);
+});
+</script>
 
 <section class="section faq-section" id="faq">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <span class="eyebrow">HAVE QUESTIONS?</span>
-        <h2>Frequently Asked Questions</h2>
-        <p>Find answers to common questions about advertising and marketing services in Dubai.</p>
-      </div>
-    </div>
+    <div class="container">
 
-    <div class="faq-layout">
-      <aside class="faq-filters" aria-label="FAQ categories">
-        <button class="filter active" data-filter="all">All Questions <span>28</span></button>
-        <button class="filter" data-filter="general">General <span>4</span></button>
-        <button class="filter" data-filter="outdoor">Outdoor Advertising <span>5</span></button>
-        <button class="filter" data-filter="digital">Digital &amp; DOOH <span>4</span></button>
-        <button class="filter" data-filter="transit">Transit Media <span>4</span></button>
-        <button class="filter" data-filter="influencer">Influencer &amp; Celebrity <span>3</span></button>
-        <button class="filter" data-filter="seo">PR, Events, Digital &amp; SEO <span>8</span></button>
-      </aside>
-
-      <div class="faq-content">
-        <input type="search" class="faq-search" id="faqSearch" placeholder="Search frequently asked questions..." aria-label="Search FAQs">
-
-        <div class="faq-list" id="faqList">
-          <article class="faq-item" data-category="general"><button class="faq-question" aria-expanded="false"><span>01</span><strong>What does an advertising agency in Dubai do?</strong><b>+</b></button><div class="faq-answer"><p>An advertising agency helps businesses plan, create and execute campaigns across relevant channels. DataMySite offers integrated advertising and marketing solutions, including outdoor advertising, digital campaigns, influencer marketing, PR, transit media and lead generation.</p></div></article>
-          <article class="faq-item" data-category="general"><button class="faq-question" aria-expanded="false"><span>02</span><strong>Why should I choose a full-service marketing agency?</strong><b>+</b></button><div class="faq-answer"><p>A full-service agency can coordinate different marketing channels under one strategy. This helps maintain consistent messaging, simplify campaign management and align activity with business objectives.</p></div></article>
-          <article class="faq-item" data-category="general"><button class="faq-question" aria-expanded="false"><span>03</span><strong>Does DataMySite provide advertising services across the UAE?</strong><b>+</b></button><div class="faq-answer"><p>DataMySite offers advertising and marketing solutions across Dubai and the UAE, with campaign options spanning outdoor, digital, transit, influencer and public relations channels.</p></div></article>
-          <article class="faq-item" data-category="general"><button class="faq-question" aria-expanded="false"><span>04</span><strong>How can I get started with DataMySite?</strong><b>+</b></button><div class="faq-answer"><p>You can contact the team through the website enquiry options or call/WhatsApp +971 52 528 7259 to discuss your campaign requirements.</p></div></article>
-
-          <article class="faq-item" data-category="outdoor"><button class="faq-question" aria-expanded="false"><span>05</span><strong>What types of outdoor advertising are available in Dubai?</strong><b>+</b></button><div class="faq-answer"><p>Outdoor advertising options include billboards, unipoles, lamp posts, bridge banners, flyers distribution and human billboards. The right format depends on your target audience, location and campaign objective.</p></div></article>
-          <article class="faq-item" data-category="outdoor"><button class="faq-question" aria-expanded="false"><span>06</span><strong>How much does billboard advertising cost in Dubai?</strong><b>+</b></button><div class="faq-answer"><p>Billboard advertising costs depend on location, format, visibility, campaign duration and availability. Contact the team with your preferred areas and campaign period for a tailored quotation.</p></div></article>
-          <article class="faq-item" data-category="outdoor"><button class="faq-question" aria-expanded="false"><span>07</span><strong>Which locations are best for outdoor advertising?</strong><b>+</b></button><div class="faq-answer"><p>The best locations depend on your audience and campaign objective. High-traffic roads, commercial districts, retail destinations and residential communities can each serve different campaign needs.</p></div></article>
-          <article class="faq-item" data-category="outdoor"><button class="faq-question" aria-expanded="false"><span>08</span><strong>What is the difference between billboards and unipoles?</strong><b>+</b></button><div class="faq-answer"><p>Both are outdoor advertising formats. Their structure, placement, size and visibility can differ. The suitable option depends on the campaign location, viewing distance and audience movement.</p></div></article>
-          <article class="faq-item" data-category="outdoor"><button class="faq-question" aria-expanded="false"><span>09</span><strong>Can outdoor advertising campaigns target specific areas?</strong><b>+</b></button><div class="faq-answer"><p>Yes. Campaigns can be planned around selected areas and audience movement patterns, subject to inventory availability and applicable permissions.</p></div></article>
-
-          <article class="faq-item" data-category="digital"><button class="faq-question" aria-expanded="false"><span>10</span><strong>What is DOOH advertising?</strong><b>+</b></button><div class="faq-answer"><p>Digital Out-of-Home (DOOH) advertising uses digital screens in public and commercial spaces to display campaign content. It can provide flexible creative scheduling and high-visibility placements.</p></div></article>
-          <article class="faq-item" data-category="digital"><button class="faq-question" aria-expanded="false"><span>11</span><strong>Where can digital screen advertising be placed in Dubai?</strong><b>+</b></button><div class="faq-answer"><p>Digital screens can be found in locations such as malls, hotels, elevators, transport hubs and other public or commercial environments. Availability depends on the selected media network.</p></div></article>
-          <article class="faq-item" data-category="digital"><button class="faq-question" aria-expanded="false"><span>12</span><strong>What is OTT advertising?</strong><b>+</b></button><div class="faq-answer"><p>Over-the-top (OTT) advertising places video ads within internet-delivered streaming content. It allows brands to reach audiences through connected devices and streaming platforms.</p></div></article>
-          <article class="faq-item" data-category="digital"><button class="faq-question" aria-expanded="false"><span>13</span><strong>Can digital advertising campaigns be measured?</strong><b>+</b></button><div class="faq-answer"><p>Digital campaigns can use platform and campaign reporting to monitor relevant performance indicators, such as reach, impressions, clicks and conversions, depending on the channel.</p></div></article>
-
-          <article class="faq-item" data-category="transit"><button class="faq-question" aria-expanded="false"><span>14</span><strong>What is transit media advertising?</strong><b>+</b></button><div class="faq-answer"><p>Transit media advertising places brand messages on or around transport environments, including taxis, buses, metro systems, airports, boats and other moving or passenger-facing media.</p></div></article>
-          <article class="faq-item" data-category="transit"><button class="faq-question" aria-expanded="false"><span>15</span><strong>Can I advertise on taxis and buses in Dubai?</strong><b>+</b></button><div class="faq-answer"><p>Taxi and bus advertising are transit media options. Campaign availability, routes, formats and durations depend on the relevant media inventory and approvals.</p></div></article>
-          <article class="faq-item" data-category="transit"><button class="faq-question" aria-expanded="false"><span>16</span><strong>Is airport advertising suitable for international brands?</strong><b>+</b></button><div class="faq-answer"><p>Airport advertising can be useful for brands seeking visibility among travellers and international audiences. The right placement depends on passenger profile, campaign objective and available inventory.</p></div></article>
-          <article class="faq-item" data-category="transit"><button class="faq-question" aria-expanded="false"><span>17</span><strong>How long should a transit advertising campaign run?</strong><b>+</b></button><div class="faq-answer"><p>Campaign duration depends on the objective, media format, budget and audience exposure needed. A campaign plan should account for the time required to build awareness and recall.</p></div></article>
-
-          <article class="faq-item" data-category="influencer"><button class="faq-question" aria-expanded="false"><span>18</span><strong>How does influencer marketing work in the UAE?</strong><b>+</b></button><div class="faq-answer"><p>Influencer marketing connects brands with creators whose audiences match the campaign's target market. Campaigns may include sponsored posts, videos, event appearances and other content formats.</p></div></article>
-          <article class="faq-item" data-category="influencer"><button class="faq-question" aria-expanded="false"><span>19</span><strong>What is the difference between nano, micro and macro influencers?</strong><b>+</b></button><div class="faq-answer"><p>These terms generally describe creators by audience size. Nano and micro influencers often have smaller, more focused communities, while macro influencers reach larger audiences. Selection should consider relevance and engagement, not follower count alone.</p></div></article>
-          <article class="faq-item" data-category="influencer"><button class="faq-question" aria-expanded="false"><span>20</span><strong>Can brands work with celebrities for marketing campaigns?</strong><b>+</b></button><div class="faq-answer"><p>Celebrity marketing can support brand awareness and credibility through partnerships with public personalities. Campaign scope, availability and suitability depend on the brand and selected personality.</p></div></article>
-
-          <article class="faq-item" data-category="seo"><button class="faq-question" aria-expanded="false"><span>21</span><strong>How can PR coverage help my business?</strong><b>+</b></button><div class="faq-answer"><p>PR coverage can increase brand visibility and support reputation-building by placing relevant stories or announcements in suitable media publications.</p></div></article>
-          <article class="faq-item" data-category="seo"><button class="faq-question" aria-expanded="false"><span>22</span><strong>What is event marketing?</strong><b>+</b></button><div class="faq-answer"><p>Event marketing uses live or virtual experiences to connect brands with audiences. It can include launches, activations, exhibitions, sponsorships and experiential campaigns.</p></div></article>
-          <article class="faq-item" data-category="seo"><button class="faq-question" aria-expanded="false"><span>23</span><strong>What are the benefits of sponsorship marketing?</strong><b>+</b></button><div class="faq-answer"><p>Sponsorships can help brands reach relevant communities, build associations and create visibility around events, activities or organisations that align with their audience.</p></div></article>
-          <article class="faq-item" data-category="seo"><button class="faq-question" aria-expanded="false"><span>24</span><strong>What is the best way to improve my website's SEO?</strong><b>+</b></button><div class="faq-answer"><p>SEO improvements typically involve technical health, useful content, relevant keywords, site speed, mobile usability and quality links. The right priorities depend on an audit of the website and its competitive landscape.</p></div></article>
-          <article class="faq-item" data-category="seo"><button class="faq-question" aria-expanded="false"><span>25</span><strong>What should I look for when hiring a website development company in Dubai?</strong><b>+</b></button><div class="faq-answer"><p>Look for a team that builds mobile-responsive, fast-loading, SEO-optimised websites from day one — not as an afterthought. You also need ongoing maintenance support and proven e-commerce capability. DataMySite's web development team builds custom full-stack websites, high-converting e-commerce stores, and offers ongoing maintenance covering security patches, performance tuning, and content updates.</p></div></article>
-          <article class="faq-item" data-category="seo"><button class="faq-question" aria-expanded="false"><span>26</span><strong>What is the reach of radio advertising across different languages in the UAE?</strong><b>+</b></button><div class="faq-answer"><p>Radio in the UAE reaches a uniquely diverse audience — with Arabic, English, Hindi, Urdu, and Malayalam stations each serving distinct demographic communities. This makes radio one of the most targeted mass-reach formats in the country for multilingual campaigns. DataMySite plans and places radio ads across English, Arabic, Hindi/Urdu, and other multilingual stations in the UAE, allowing brands to precisely target each expat community with culturally relevant messaging.</p></div></article>
-          <article class="faq-item" data-category="seo"><button class="faq-question" aria-expanded="false"><span>27</span><strong>What is cost-per-lead advertising and is it suitable for businesses in the UAE?</strong><b>+</b></button><div class="faq-answer"><p>Cost-per-lead (CPL) is a performance marketing model where you pay only for verified, qualified leads — not impressions, clicks, or views. It offers predictable, measurable ROI and is ideal for high-ticket sectors. DataMySite runs CPL campaigns for real estate developers, educational institutions, financial services, healthcare businesses, and e-commerce brands across the UAE — delivering qualified enquiries with full tracking and reporting transparency.</p></div></article>
-          <article class="faq-item" data-category="seo"><button class="faq-question" aria-expanded="false"><span>28</span><strong>What are the most creative and memorable advertising formats available in Dubai?</strong><b>+</b></button><div class="faq-answer"><p>Dubai's appetite for the spectacular makes it one of the best markets for high-impact creative advertising. The most memorable formats include anamorphic 3D billboard CGI content, Tesla and luxury vehicle wraps as moving billboards, hot air balloon advertising over the skyline, interactive mall activations, and TopGolf brand sponsorships. DataMySite specialises in all of these experiential and CGI formats — creating content designed to go viral on social media and generate organic earned impressions far beyond the original placement.</p></div></article>
+        <div class="section-head">
+            <div>
+                <span class="eyebrow">GOT QUESTIONS?</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about advertising and marketing in Dubai and the UAE.</p>
+            </div>
         </div>
 
-        <div class="faq-empty" id="faqEmpty">No matching questions found. Try another search.</div>
-      </div>
+        <div class="faq-layout">
+
+            <aside class="faq-filters" aria-label="FAQ categories">
+                <div class="faq-filter-heading">
+                    <span>EXPLORE TOPICS</span>
+                    <span class="faq-total">28 FAQs</span>
+                </div>
+
+                <button class="filter active" data-filter="all" type="button">
+                    <span>All Questions</span><span>28</span>
+                </button>
+                <button class="filter" data-filter="general" type="button">
+                    <span>General</span><span>4</span>
+                </button>
+                <button class="filter" data-filter="outdoor" type="button">
+                    <span>Outdoor Advertising</span><span>5</span>
+                </button>
+                <button class="filter" data-filter="digital" type="button">
+                    <span>Digital &amp; DOOH</span><span>4</span>
+                </button>
+                <button class="filter" data-filter="transit" type="button">
+                    <span>Transit Media</span><span>4</span>
+                </button>
+                <button class="filter" data-filter="influencer" type="button">
+                    <span>Influencer &amp; Celebrity</span><span>3</span>
+                </button>
+                <button class="filter" data-filter="seo" type="button">
+                    <span>PR, Events, Digital &amp; SEO</span><span>8</span>
+                </button>
+            </aside>
+
+            <div class="faq-content">
+
+                <div class="faq-search-wrap">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="m20 20-4-4"></path>
+                    </svg>
+
+                    <input
+                        type="search"
+                        class="faq-search"
+                        id="faqSearch"
+                        placeholder="Search frequently asked questions..."
+                        aria-label="Search FAQs"
+                    >
+
+                    <button type="button" class="faq-clear" aria-label="Clear search">
+                        &times;
+                    </button>
+                </div>
+
+                <div class="faq-results-info">
+                    <span id="faqResultCount" aria-live="polite">Showing 28 of 28 questions</span>
+                    <button type="button" id="faqReset">Reset filters</button>
+                </div>
+
+                <div class="faq-list" id="faqList">
+
+                    <!-- GENERAL -->
+                    <article class="faq-item" data-category="general">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>01</span>
+                            <strong>What does an advertising agency in Dubai do?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>An advertising agency helps businesses plan, create and execute campaigns across relevant channels. DataMySite offers integrated advertising and marketing solutions, including outdoor advertising, digital campaigns, influencer marketing, PR, transit media and lead generation.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="general">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>02</span>
+                            <strong>Why should I choose a full-service marketing agency?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>A full-service agency can coordinate different marketing channels under one strategy. This helps maintain consistent messaging, simplify campaign management and align activity with business objectives.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="general">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>03</span>
+                            <strong>Does DataMySite provide advertising services across the UAE?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>DataMySite offers advertising and marketing solutions across Dubai and the UAE, with campaign options spanning outdoor, digital, transit, influencer and public relations channels.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="general">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>04</span>
+                            <strong>How can I get started with DataMySite?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You can contact the team through the website enquiry options or call/WhatsApp +971 52 528 7259 to discuss your campaign requirements.</p>
+                        </div>
+                    </article>
+
+                    <!-- OUTDOOR ADVERTISING -->
+                    <article class="faq-item" data-category="outdoor">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>05</span>
+                            <strong>What types of outdoor advertising are available in Dubai?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Outdoor advertising options include billboards, unipoles, lamp posts, bridge banners, flyers distribution and human billboards. The right format depends on your target audience, location and campaign objective.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="outdoor">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>06</span>
+                            <strong>How much does billboard advertising cost in Dubai?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Billboard advertising costs depend on location, format, visibility, campaign duration and availability. Contact the team with your preferred areas and campaign period for a tailored quotation.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="outdoor">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>07</span>
+                            <strong>Which locations are best for outdoor advertising?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The best locations depend on your audience and campaign objective. High-traffic roads, commercial districts, retail destinations and residential communities can each serve different campaign needs.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="outdoor">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>08</span>
+                            <strong>What is the difference between billboards and unipoles?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Both are outdoor advertising formats. Their structure, placement, size and visibility can differ. The suitable option depends on the campaign location, viewing distance and audience movement.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="outdoor">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>09</span>
+                            <strong>Can outdoor advertising campaigns target specific areas?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. Campaigns can be planned around selected areas and audience movement patterns, subject to inventory availability and applicable permissions.</p>
+                        </div>
+                    </article>
+
+                    <!-- DIGITAL & DOOH -->
+                    <article class="faq-item" data-category="digital">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>10</span>
+                            <strong>What is DOOH advertising?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Digital Out-of-Home (DOOH) advertising uses digital screens in public and commercial spaces to display campaign content. It can provide flexible creative scheduling and high-visibility placements.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="digital">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>11</span>
+                            <strong>Where can digital screen advertising be placed in Dubai?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Digital screens can be found in locations such as malls, hotels, elevators, transport hubs and other public or commercial environments. Availability depends on the selected media network.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="digital">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>12</span>
+                            <strong>What is OTT advertising?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Over-the-top (OTT) advertising places video ads within internet-delivered streaming content. It allows brands to reach audiences through connected devices and streaming platforms.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="digital">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>13</span>
+                            <strong>Can digital advertising campaigns be measured?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Digital campaigns can use platform and campaign reporting to monitor relevant performance indicators, such as reach, impressions, clicks and conversions, depending on the channel.</p>
+                        </div>
+                    </article>
+
+                    <!-- TRANSIT MEDIA -->
+                    <article class="faq-item" data-category="transit">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>14</span>
+                            <strong>What is transit media advertising?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Transit media advertising places brand messages on or around transport environments, including taxis, buses, metro systems, airports, boats and other moving or passenger-facing media.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="transit">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>15</span>
+                            <strong>Can I advertise on taxis and buses in Dubai?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Taxi and bus advertising are transit media options. Campaign availability, routes, formats and durations depend on the relevant media inventory and approvals.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="transit">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>16</span>
+                            <strong>Is airport advertising suitable for international brands?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Airport advertising can be useful for brands seeking visibility among travellers and international audiences. The right placement depends on passenger profile, campaign objective and available inventory.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="transit">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>17</span>
+                            <strong>How long should a transit advertising campaign run?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Campaign duration depends on the objective, media format, budget and audience exposure needed. A campaign plan should account for the time required to build awareness and recall.</p>
+                        </div>
+                    </article>
+
+                    <!-- INFLUENCER & CELEBRITY -->
+                    <article class="faq-item" data-category="influencer">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>18</span>
+                            <strong>How does influencer marketing work in the UAE?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Influencer marketing connects brands with creators whose audiences match the campaign's target market. Campaigns may include sponsored posts, videos, event appearances and other content formats.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="influencer">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>19</span>
+                            <strong>What is the difference between nano, micro and macro influencers?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>These terms generally describe creators by audience size. Nano and micro influencers often have smaller, more focused communities, while macro influencers reach larger audiences. Selection should consider relevance and engagement, not follower count alone.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="influencer">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>20</span>
+                            <strong>Can brands work with celebrities for marketing campaigns?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Celebrity marketing can support brand awareness and credibility through partnerships with public personalities. Campaign scope, availability and suitability depend on the brand and selected personality.</p>
+                        </div>
+                    </article>
+
+                    <!-- PR, EVENTS, DIGITAL & SEO -->
+                    <article class="faq-item" data-category="seo">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>21</span>
+                            <strong>How can PR coverage help my business?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>PR coverage can increase brand visibility and support reputation-building by placing relevant stories or announcements in suitable media publications.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="seo">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>22</span>
+                            <strong>What is event marketing?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Event marketing uses live or virtual experiences to connect brands with audiences. It can include launches, activations, exhibitions, sponsorships and experiential campaigns.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="seo">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>23</span>
+                            <strong>What are the benefits of sponsorship marketing?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sponsorships can help brands reach relevant communities, build associations and create visibility around events, activities or organisations that align with their audience.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="seo">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>24</span>
+                            <strong>What is the best way to improve my website's SEO?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>SEO improvements typically involve technical health, useful content, relevant keywords, site speed, mobile usability and quality links. The right priorities depend on an audit of the website and its competitive landscape.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="seo">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>25</span>
+                            <strong>What should I look for when hiring a website development company in Dubai?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Look for a team that builds mobile-responsive, fast-loading, SEO-optimised websites from day one — not as an afterthought. You also need ongoing maintenance support and proven e-commerce capability. DataMySite's web development team builds custom full-stack websites, high-converting e-commerce stores, and offers ongoing maintenance covering security patches, performance tuning, and content updates.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="seo">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>26</span>
+                            <strong>What is the reach of radio advertising across different languages in the UAE?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Radio in the UAE reaches a uniquely diverse audience — with Arabic, English, Hindi, Urdu, and Malayalam stations each serving distinct demographic communities. This makes radio one of the most targeted mass-reach formats in the country for multilingual campaigns. DataMySite plans and places radio ads across English, Arabic, Hindi/Urdu, and other multilingual stations in the UAE, allowing brands to precisely target each expat community with culturally relevant messaging.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="seo">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>27</span>
+                            <strong>What is cost-per-lead advertising and is it suitable for businesses in the UAE?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Cost-per-lead (CPL) is a performance marketing model where you pay only for verified, qualified leads — not impressions, clicks, or views. It offers predictable, measurable ROI and is ideal for high-ticket sectors. DataMySite runs CPL campaigns for real estate developers, educational institutions, financial services, healthcare businesses, and e-commerce brands across the UAE — delivering qualified enquiries with full tracking and reporting transparency.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item" data-category="seo">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span>28</span>
+                            <strong>What are the most creative and memorable advertising formats available in Dubai?</strong>
+                            <b aria-hidden="true">+</b>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Dubai's appetite for the spectacular makes it one of the best markets for high-impact creative advertising. The most memorable formats include anamorphic 3D billboard CGI content, Tesla and luxury vehicle wraps as moving billboards, hot air balloon advertising over the skyline, interactive mall activations, and TopGolf brand sponsorships. DataMySite specialises in all of these experiential and CGI formats — creating content designed to go viral on social media and generate organic earned impressions far beyond the original placement.</p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="faq-empty" id="faqEmpty" hidden>
+                    <div class="faq-empty-icon">?</div>
+                    <strong>No matching questions found</strong>
+                    <p>Try another search term or choose a different category.</p>
+                    <button type="button" id="faqEmptyReset">Clear filters</button>
+                </div>
+
+            </div>
+        </div>
     </div>
-  </div>
 </section>
+
+<style>
+  
+/* =========================================
+   DATAMYSITE FAQ SECTION
+========================================= */
+
+.faq-section {
+    background: #f7f8f7;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.faq-section .section-head {
+    margin-bottom: 45px;
+}
+
+.faq-section .section-head h2 {
+    color: #17263F;
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 750;
+    line-height: 1.2;
+    margin: 0 0 12px;
+}
+
+.faq-section .section-head p {
+    color: #68736f;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.faq-section .eyebrow {
+    color: #E04B43;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+/* Main layout */
+
+.faq-layout {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    align-items: start;
+    gap: 32px;
+}
+
+/* Category filters */
+
+.faq-filters {
+    position: sticky;
+    top: 25px;
+    background: #fff;
+    border: 1px solid #e8ede9;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(23, 38, 63, .045);
+}
+
+.faq-filter-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 17px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #edf0ed;
+}
+
+.faq-filter-heading > span:first-child {
+    color: #89938e;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.faq-total {
+    color: #12453A;
+    background: #eaf1ed;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.faq-filters .filter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 12px;
+    margin-bottom: 5px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #56635d;
+    text-align: left;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color .25s ease, background .25s ease, transform .25s ease;
+}
+
+.faq-filters .filter:hover {
+    background: var(--green);
+    color: #12453A;
+    transform: translateX(3px);
+}
+
+.faq-filters .filter.active {
+    background: #12453A;
+    color: #fff;
+    box-shadow: 0 5px 14px rgba(18, 69, 58, .16);
+}
+
+.faq-filters .filter span:last-child {
+    min-width: 25px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #f0f2f0;
+    color: #68736f;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.faq-filters .filter.active span:last-child {
+    background: rgba(255,255,255,.17);
+    color: #fff;
+}
+
+/* Search */
+
+.faq-search-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: #fff;
+    border: 1px solid #e1e8e3;
+    border-radius: 10px;
+    padding: 0 15px;
+    height: 53px;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.faq-search-wrap:focus-within {
+    border-color: #12453A;
+    box-shadow: 0 0 0 4px rgba(18, 69, 58, .08);
+}
+
+.faq-search-wrap > svg {
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+    fill: none;
+    stroke: #87928c;
+    stroke-width: 1.8;
+}
+
+.faq-search {
+    width: 100%;
+    height: 100%;
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    padding: 0 12px;
+    color: #17263F;
+    background: transparent !important;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.faq-search::placeholder {
+    color: #9aa49e;
+}
+
+.faq-clear {
+    display: none;
+    border: 0;
+    background: transparent;
+    color: #87928c;
+    font-size: 23px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.faq-clear.visible {
+    display: block;
+}
+
+/* Results info */
+
+.faq-results-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 17px 2px 13px;
+}
+
+.faq-results-info span {
+    color: #87928c;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.faq-results-info button {
+    border: 0;
+    background: transparent;
+    color: #12453A;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.faq-results-info button:hover {
+    color: #E04B43;
+}
+
+/* FAQ list */
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.faq-item {
+    background: #fff;
+    border: 1px solid #e8ede9;
+    border-radius: 11px;
+    overflow: hidden;
+    transition: border-color .3s ease, box-shadow .3s ease, transform .3s ease;
+}
+
+.faq-item:hover {
+    border-color: #cbdad1;
+    box-shadow: 0 7px 20px rgba(23, 38, 63, .045);
+}
+
+.faq-item.open {
+    border-color: rgba(18, 69, 58, .35);
+    box-shadow: 0 9px 25px rgba(18, 69, 58, .07);
+}
+
+/* Hidden items must stay hidden */
+
+.faq-item[hidden],
+.faq-empty[hidden] {
+    display: none !important;
+}
+
+/* Question button */
+
+.faq-question {
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 17px 20px;
+    background: transparent;
+    border: 0;
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.faq-question > span {
+    color: #a1aaa5;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+    transition: color .3s ease;
+}
+
+.faq-question strong {
+    flex: 1;
+    color: #17263F;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 700;
+    transition: color .3s ease;
+}
+
+.faq-item.open .faq-question strong,
+.faq-item.open .faq-question > span {
+    color: #12453A;
+}
+
+/* Plus / minus icon */
+
+.faq-question b {
+    width: 29px;
+    height: 29px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #f1f5f2;
+    color: #12453A;
+    font-size: 19px;
+    font-weight: 400;
+    transition: background .3s ease, color .3s ease, transform .35s ease;
+}
+
+.faq-item.open .faq-question b {
+    background: #12453A;
+    color: #fff;
+    transform: rotate(180deg);
+}
+
+/* Accordion answer */
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .35s ease;
+}
+
+.faq-answer > p {
+    color: #68736f;
+    font-size: 13px;
+    line-height: 1.9;
+    margin: 0;
+    padding: 0 65px 22px;
+}
+
+/* Empty state */
+
+.faq-empty {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+    border: 1px dashed #dce4df;
+    border-radius: 12px;
+}
+
+.faq-empty-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: #eaf1ed;
+    color: #12453A;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.faq-empty strong {
+    display: block;
+    color: #17263F;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.faq-empty p {
+    color: #87928c;
+    font-size: 13px;
+    margin: 0 0 15px;
+}
+
+.faq-empty button {
+    background: #12453A;
+    color: #fff;
+    padding: 10px 17px;
+    border: 0;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Tablet */
+
+@media (max-width: 991px) {
+    .faq-layout {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .faq-filters {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        padding: 15px;
+    }
+
+    .faq-filter-heading {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .faq-filters .filter {
+        width: auto;
+        margin: 0;
+        padding: 9px 12px;
+        font-size: 12px;
+    }
+
+    .faq-filters .filter:hover {
+        transform: translateY(-2px);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+    .faq-section {
+        padding: 65px 0;
+    }
+
+    .faq-section .section-head {
+        margin-bottom: 30px;
+    }
+
+    .faq-section .section-head h2 {
+        font-size: 29px;
+    }
+
+    .faq-section .section-head p {
+        font-size: 14px;
+    }
+
+    .faq-filters {
+        gap: 6px;
+    }
+
+    .faq-filters .filter {
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+
+    .faq-filters .filter span:last-child {
+        min-width: 21px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .faq-question {
+        gap: 11px;
+        padding: 15px 13px;
+        min-height: 65px;
+    }
+
+    .faq-question strong {
+        font-size: 13px;
+    }
+
+    .faq-question b {
+        width: 26px;
+        height: 26px;
+    }
+
+    .faq-answer > p {
+        padding: 0 49px 18px;
+        font-size: 12px;
+        line-height: 1.8;
+    }
+}
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+    .faq-section *,
+    .faq-section *::before,
+    .faq-section *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+.faq-answer {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+    transition: max-height 0.35s ease, opacity 0.25s ease;
+    box-sizing: border-box;
+}
+
+.faq-item.active .faq-answer {
+    opacity: 1;
+}
+
+.faq-answer p {
+    margin: 0;
+    padding: 0 65px 22px;
+}
+
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const faqSection = document.querySelector('.faq-section');
+
+    if (!faqSection) return;
+
+    faqSection.addEventListener('click', function (event) {
+        const question = event.target.closest('.faq-question');
+
+        if (!question || !faqSection.contains(question)) return;
+
+        const currentItem = question.closest('.faq-item');
+        const currentAnswer = currentItem.querySelector('.faq-answer');
+
+        if (!currentAnswer) return;
+
+        const wasOpen = currentItem.classList.contains('active');
+
+        // Close all FAQ items
+        faqSection.querySelectorAll('.faq-item').forEach(function (item) {
+            item.classList.remove('active');
+
+            const answer = item.querySelector('.faq-answer');
+            const button = item.querySelector('.faq-question');
+
+            if (answer) answer.style.maxHeight = '0px';
+            if (button) button.setAttribute('aria-expanded', 'false');
+        });
+
+        // Open the clicked item
+        if (!wasOpen) {
+            currentItem.classList.add('active');
+            question.setAttribute('aria-expanded', 'true');
+            currentAnswer.style.maxHeight = currentAnswer.scrollHeight + 'px';
+        }
+    });
+});
+</script>
 
 <section class="cta-section" id="contact">
   <div class="container cta-inner">
