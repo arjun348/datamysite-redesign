@@ -1,0 +1,2836 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b4a3a">
+<title>DataMySite | Advertising & Marketing Agency in Dubai</title>
+<meta name="description" content="DataMySite is a Dubai-based advertising and marketing agency delivering digital, outdoor, influencer and media campaigns.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --green: #0B4A3A;
+  --green-dark: #07382d;
+  --green-light: #eaf2ee;
+  --red: #E04B43;
+  --red-dark: #c93a33;
+  --ink: #17263F;
+  --text: #4d5965;
+  --muted: #818b94;
+  --line: #e6e9e7;
+  --cream: #f7f7f3;
+  --white: #fff;
+  --font-heading: "Lexend", sans-serif;
+  --font-body: "Roboto", sans-serif;
+  --container: 1240px;
+  --radius: 18px;
+  --shadow: 0 18px 55px rgba(14, 39, 31, .09);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--white);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+body.menu-open { overflow: hidden; }
+
+a { color: inherit; text-decoration: none; }
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+
+.container {
+  width: min(var(--container), calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.section {
+  padding: 112px 0;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--red);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: currentColor;
+}
+
+.section-heading {
+  max-width: 680px;
+  margin: 16px 0 0;
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 600;
+  line-height: 1.16;
+  letter-spacing: -1.8px;
+}
+
+.section-description {
+  max-width: 580px;
+  margin: 18px 0 0;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.section-top {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 52px;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--green);
+  font-weight: 700;
+  transition: gap .25s ease, color .25s ease;
+}
+
+.text-link:hover {
+  gap: 16px;
+  color: var(--red);
+}
+
+.text-link span { font-size: 20px; }
+
+/* Header */
+
+.site-header {
+  position: relative;
+  z-index: 100;
+  background: #fff;
+}
+
+.utility-bar {
+  min-height: 42px;
+  background: var(--green-dark);
+  color: #fff;
+  font-size: 12px;
+}
+
+.utility-inner {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.utility-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 600;
+}
+
+.utility-phone svg { width: 14px; height: 14px; }
+
+.utility-message {
+  color: rgba(255,255,255,.8);
+  letter-spacing: .2px;
+}
+
+.utility-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.utility-links a {
+  color: rgba(255,255,255,.82);
+  transition: color .2s ease;
+}
+
+.utility-links a:hover { color: #fff; }
+
+.main-header {
+  position: relative;
+  z-index: 10;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+
+.main-header-inner {
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.brand img {
+  width: 184px;
+  height: auto;
+  object-fit: contain;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.header-phone {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.35;
+}
+
+.header-phone small {
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.header-phone strong {
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 50px;
+  padding: 0 23px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: transform .25s ease, background .25s ease, border-color .25s ease;
+}
+
+.btn:hover { transform: translateY(-2px); }
+
+.btn-primary {
+  color: #fff;
+  background: var(--red);
+}
+
+.btn-primary:hover { background: var(--red-dark); }
+
+.btn-outline {
+  color: var(--green);
+  border-color: rgba(11,74,58,.28);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  color: #fff;
+  border-color: var(--green);
+  background: var(--green);
+}
+
+.btn-arrow {
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* Service navigation */
+
+.service-nav {
+  position: relative;
+  z-index: 9;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+
+.service-nav-inner {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.service-nav-label {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.service-nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+}
+
+.nav-service {
+  position: relative;
+}
+
+.nav-service > button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 56px;
+  padding: 0 7px;
+  color: #384451;
+  border: 0;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: color .2s ease;
+}
+
+.nav-service > button:hover,
+.nav-service.is-open > button {
+  color: var(--red);
+}
+
+.chevron {
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform .2s ease;
+}
+
+.nav-service.is-open .chevron {
+  transform: rotate(225deg) translate(-2px, -1px);
+}
+
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 30;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(170px, 1fr));
+  gap: 0;
+  width: 390px;
+  padding: 23px;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--red);
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(17,38,31,.13);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
+}
+
+.nav-service:hover .mega-menu,
+.nav-service:focus-within .mega-menu,
+.nav-service.is-open .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.mega-menu.single-column {
+  display: block;
+  width: 265px;
+}
+
+.mega-group { padding: 0 12px 12px 0; }
+
+.mega-group > a {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--green);
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.mega-group ul {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mega-group li a {
+  display: block;
+  color: #69747d;
+  font-size: 11px;
+  line-height: 1.5;
+  transition: color .2s ease, transform .2s ease;
+}
+
+.mega-group li a:hover {
+  color: var(--red);
+  transform: translateX(3px);
+}
+
+.mobile-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: #fff;
+  color: var(--green);
+}
+
+.mobile-toggle svg { width: 21px; height: 21px; }
+
+/* Hero */
+
+.hero {
+  position: relative;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #fff;
+  background:
+    linear-gradient(90deg, rgba(5,43,34,.96) 0%, rgba(7,56,43,.89) 45%, rgba(7,56,43,.70) 100%),
+    url("https://datamysite.com/public/assets/img/background/banner.webp") center/cover no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -180px;
+  right: -120px;
+  width: 560px;
+  height: 560px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: 8%;
+  bottom: -310px;
+  width: 620px;
+  height: 620px;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(340px, .85fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: 82px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.hero-form-wrap {
+  position: relative;
+  max-width: 430px;
+  padding: 34px;
+  color: var(--ink);
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(0,0,0,.2);
+  animation: hero-rise .7s ease both;
+}
+
+.form-kicker {
+  color: var(--red);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.hero-form-wrap h2 {
+  margin: 8px 0 7px;
+  font-family: var(--font-heading);
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: -.8px;
+  line-height: 1.25;
+}
+
+.form-intro {
+  margin: 0 0 23px;
+  color: #77818a;
+  font-size: 13px;
+}
+
+.consultation-form {
+  display: grid;
+  gap: 12px;
+}
+
+.form-field {
+  width: 100%;
+  min-height: 46px;
+  padding: 12px 14px;
+  border: 1px solid #e4e8e5;
+  border-radius: 3px;
+  outline: none;
+  color: var(--ink);
+  background: #fbfcfb;
+  font-size: 12px;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.form-field:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px rgba(11,74,58,.08);
+}
+
+textarea.form-field {
+  min-height: 88px;
+  resize: vertical;
+}
+
+.phone-field {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 8px;
+}
+
+.phone-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e4e8e5;
+  background: #fbfcfb;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.form-submit {
+  width: 100%;
+  min-height: 49px;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  background: var(--red);
+  font-size: 12px;
+  font-weight: 700;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.form-submit:hover {
+  background: var(--red-dark);
+  transform: translateY(-2px);
+}
+
+.form-trust {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 14px;
+  color: #78837c;
+  font-size: 10px;
+}
+
+.form-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.form-trust i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #43a17d;
+}
+
+.form-feedback {
+  display: none;
+  margin: 10px 0 0;
+  color: var(--green);
+  font-size: 12px;
+}
+
+.form-feedback.visible { display: block; }
+
+.hero-copy {
+  max-width: 660px;
+  padding: 18px 0;
+  animation: hero-rise .8s .12s ease both;
+}
+
+.hero-brand-mark {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 23px;
+}
+
+.hero-brand-mark strong {
+  font-family: var(--font-heading);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 7px;
+}
+
+.hero-brand-mark span {
+  width: 42px;
+  height: 1px;
+  background: var(--red);
+}
+
+.hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 20px;
+  color: #e4c9a9;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-label::before {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: var(--red);
+}
+
+.hero h1 {
+  max-width: 650px;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(42px, 5.2vw, 70px);
+  font-weight: 600;
+  line-height: 1.07;
+  letter-spacing: -2.8px;
+}
+
+.hero h1 em {
+  color: #e8b5a7;
+  font-style: normal;
+}
+
+.hero-quote {
+  max-width: 500px;
+  margin: 26px 0 0;
+  padding-left: 18px;
+  border-left: 2px solid var(--red);
+  color: rgba(255,255,255,.78);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.hero-quote strong {
+  color: #fff;
+  font-weight: 500;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 33px;
+}
+
+.hero-actions .btn { min-height: 54px; }
+
+.hero-work-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  transition: color .2s ease, gap .2s ease;
+}
+
+.hero-work-link:hover {
+  gap: 15px;
+  color: #f2b4a8;
+}
+
+.hero-work-link span { font-size: 20px; }
+
+.hero-bottom-note {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 45px;
+  color: rgba(255,255,255,.68);
+  font-size: 11px;
+}
+
+.hero-bottom-note strong {
+  color: #fff;
+  font-size: 12px;
+}
+
+.hero-bottom-note .note-line {
+  width: 35px;
+  height: 1px;
+  background: var(--red);
+}
+
+/* Trust strip */
+
+.trust-strip {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+
+.trust-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  padding: 27px 0;
+}
+
+.trust-item {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  padding: 0 18px;
+  border-right: 1px solid var(--line);
+}
+
+.trust-item:last-child { border: 0; }
+
+.trust-number {
+  color: var(--green);
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.trust-label {
+  max-width: 105px;
+  color: #78828a;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+/* Intro */
+
+.intro-section {
+  padding: 115px 0 105px;
+  background: var(--cream);
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  align-items: center;
+  gap: 90px;
+}
+
+.intro-visual {
+  position: relative;
+  min-height: 410px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-visual::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 78%;
+  height: 90%;
+  border: 1px solid rgba(11,74,58,.25);
+}
+
+.intro-visual img {
+  position: relative;
+  z-index: 1;
+  width: 88%;
+  height: 370px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.intro-stat {
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+  z-index: 2;
+  width: 175px;
+  padding: 23px;
+  color: #fff;
+  background: var(--green);
+  box-shadow: var(--shadow);
+}
+
+.intro-stat strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 36px;
+  line-height: 1;
+}
+
+.intro-stat span {
+  display: block;
+  margin-top: 8px;
+  color: rgba(255,255,255,.75);
+  font-size: 11px;
+}
+
+.intro-copy .section-heading { max-width: 600px; }
+
+.intro-copy p {
+  max-width: 580px;
+  margin: 20px 0 0;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.intro-points {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 22px;
+  margin: 29px 0 30px;
+}
+
+.intro-point {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #34434a;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.intro-point span {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+  border-radius: 50%;
+  color: var(--green);
+  background: #dceae3;
+  font-size: 12px;
+}
+
+/* Solutions */
+
+.solutions-section { background: #fff; }
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 23px;
+}
+
+.solution-card {
+  position: relative;
+  min-height: 390px;
+  overflow: hidden;
+  color: #fff;
+  background: var(--green-dark);
+  isolation: isolate;
+}
+
+.solution-card img {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .65s cubic-bezier(.2,.7,.2,1);
+}
+
+.solution-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(0deg, rgba(4,29,24,.94) 0%, rgba(4,29,24,.42) 55%, rgba(4,29,24,.08) 100%);
+  transition: opacity .3s ease;
+}
+
+.solution-card:hover img { transform: scale(1.06); }
+
+.solution-card-content {
+  position: absolute;
+  right: 27px;
+  bottom: 28px;
+  left: 27px;
+}
+
+.solution-index {
+  display: inline-block;
+  margin-bottom: 13px;
+  color: #f1b3a6;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.solution-card h3 {
+  max-width: 270px;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.solution-card p {
+  max-width: 280px;
+  margin: 11px 0 17px;
+  color: rgba(255,255,255,.75);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.solution-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.solution-card a span {
+  color: #f1b3a6;
+  font-size: 18px;
+  transition: transform .2s ease;
+}
+
+.solution-card a:hover span { transform: translateX(5px); }
+
+/* Case studies */
+
+.case-section {
+  background: var(--cream);
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr .85fr;
+  grid-template-rows: 235px 235px;
+  gap: 18px;
+}
+
+.case-card {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  color: #fff;
+  background: #1d3b33;
+  isolation: isolate;
+}
+
+.case-card:first-child {
+  grid-row: span 2;
+}
+
+.case-card img {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .65s ease;
+}
+
+.case-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(0deg, rgba(5,25,21,.9), rgba(5,25,21,.02) 85%);
+}
+
+.case-card:hover img { transform: scale(1.055); }
+
+.case-content {
+  position: absolute;
+  right: 22px;
+  bottom: 20px;
+  left: 22px;
+}
+
+.case-content small {
+  color: #f2b4a8;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+
+.case-content h3 {
+  margin: 5px 0 0;
+  font-family: var(--font-heading);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.case-card:first-child .case-content h3 { font-size: 27px; }
+
+.case-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 9px;
+  color: rgba(255,255,255,.8);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.case-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
+}
+
+/* Services */
+
+.services-section { background: #fff; }
+
+.services-layout {
+  display: grid;
+  grid-template-columns: .75fr 1.25fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.services-intro {
+  position: sticky;
+  top: 120px;
+}
+
+.services-intro .section-heading { font-size: clamp(34px, 4vw, 47px); }
+
+.services-intro p {
+  margin: 20px 0 27px;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--line);
+}
+
+.service-item {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 17px 16px 0;
+  border-bottom: 1px solid var(--line);
+  transition: padding .25s ease, color .25s ease;
+}
+
+.service-item:nth-child(odd) { margin-right: 22px; }
+.service-item:nth-child(even) { padding-left: 22px; border-left: 1px solid var(--line); }
+
+.service-item span {
+  color: #33404c;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 500;
+  transition: color .2s ease;
+}
+
+.service-item b {
+  color: #aab2ae;
+  font-size: 19px;
+  font-weight: 400;
+  transition: color .2s ease, transform .2s ease;
+}
+
+.service-item:hover { padding-left: 8px; }
+.service-item:hover span, .service-item:hover b { color: var(--red); }
+.service-item:hover b { transform: translateX(4px); }
+
+/* Numbers */
+
+.numbers-section {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background: var(--green);
+}
+
+.numbers-section::after {
+  content: "DMS";
+  position: absolute;
+  right: -10px;
+  bottom: -105px;
+  color: rgba(255,255,255,.035);
+  font-family: var(--font-heading);
+  font-size: 300px;
+  font-weight: 700;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.numbers-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.numbers-heading {
+  max-width: 620px;
+  margin-bottom: 55px;
+}
+
+.numbers-heading .eyebrow { color: #efb4a7; }
+
+.numbers-heading h2 {
+  margin: 15px 0 0;
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -1.4px;
+}
+
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid rgba(255,255,255,.2);
+}
+
+.number-card {
+  padding: 32px 25px 5px 0;
+  border-right: 1px solid rgba(255,255,255,.2);
+}
+
+.number-card:not(:first-child) { padding-left: 30px; }
+.number-card:last-child { border: 0; }
+
+.number-card strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(35px, 4vw, 51px);
+  font-weight: 600;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+
+.number-card span {
+  display: block;
+  margin-top: 13px;
+  color: rgba(255,255,255,.7);
+  font-size: 12px;
+}
+
+/* Testimonials */
+
+.testimonials-section { background: #f7f7f3; }
+
+.testimonial-layout {
+  display: grid;
+  grid-template-columns: .75fr 1.25fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.testimonial-intro .section-heading { font-size: 42px; }
+
+.google-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  padding: 13px 16px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.google-g {
+  color: #4285f4;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.google-rating strong {
+  display: block;
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.google-rating small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.stars {
+  color: #e6a93c;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.testimonial-card {
+  position: relative;
+  padding: 43px 46px;
+  background: #fff;
+  box-shadow: 0 14px 45px rgba(19,39,31,.06);
+}
+
+.quote-mark {
+  color: #e7b3a8;
+  font-family: Georgia, serif;
+  font-size: 70px;
+  line-height: .7;
+}
+
+.testimonial-card blockquote {
+  margin: 20px 0 28px;
+  color: #394750;
+  font-family: var(--font-heading);
+  font-size: clamp(17px, 2vw, 22px);
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.testimonial-author strong {
+  display: block;
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.testimonial-author small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+/* Blog */
+
+.blog-section { background: #fff; }
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.blog-card {
+  border: 1px solid var(--line);
+  background: #fff;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+.blog-image {
+  position: relative;
+  height: 215px;
+  overflow: hidden;
+  background: var(--green-light);
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .55s ease;
+}
+
+.blog-card:hover .blog-image img { transform: scale(1.05); }
+
+.blog-date {
+  position: absolute;
+  left: 17px;
+  bottom: 0;
+  padding: 8px 12px;
+  color: #fff;
+  background: var(--red);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.blog-content { padding: 23px; }
+
+.blog-content small {
+  color: var(--red);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.blog-content h3 {
+  min-height: 65px;
+  margin: 11px 0 15px;
+  color: var(--ink);
+  font-family: var(--font-heading);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.blog-content a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.blog-content a:hover { color: var(--red); }
+
+/* FAQ */
+
+.faq-section { background: var(--cream); }
+
+.faq-layout {
+  display: grid;
+  grid-template-columns: .75fr 1.25fr;
+  gap: 85px;
+  align-items: start;
+}
+
+.faq-intro {
+  position: sticky;
+  top: 120px;
+}
+
+.faq-intro p {
+  margin-top: 19px;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.faq-list { border-top: 1px solid #dfe4df; }
+
+.faq-item { border-bottom: 1px solid #dfe4df; }
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 0;
+  border: 0;
+  color: var(--ink);
+  background: transparent;
+  text-align: left;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.faq-plus {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+  border: 1px solid #cbd4ce;
+  border-radius: 50%;
+}
+
+.faq-plus::before, .faq-plus::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  width: 8px;
+  height: 1px;
+  background: var(--green);
+  transition: transform .2s ease;
+}
+
+.faq-plus::after { transform: rotate(90deg); }
+
+.faq-item.active .faq-plus::after { transform: rotate(0); }
+
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .3s ease;
+}
+
+.faq-item.active .faq-answer { grid-template-rows: 1fr; }
+
+.faq-answer-inner { overflow: hidden; }
+
+.faq-answer p {
+  max-width: 650px;
+  margin: 0;
+  padding: 0 35px 22px 0;
+  color: #68747b;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* CTA */
+
+.final-cta {
+  position: relative;
+  overflow: hidden;
+  padding: 86px 0;
+  color: #fff;
+  background: var(--green-dark);
+}
+
+.final-cta::before {
+  content: "";
+  position: absolute;
+  top: -220px;
+  right: -80px;
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 50%;
+}
+
+.final-cta-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.final-cta h2 {
+  max-width: 680px;
+  margin: 13px 0 0;
+  font-family: var(--font-heading);
+  font-size: clamp(31px, 4vw, 48px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.final-cta p {
+  margin: 15px 0 0;
+  color: rgba(255,255,255,.7);
+  font-size: 14px;
+}
+
+/* Footer */
+
+.site-footer {
+  color: rgba(255,255,255,.7);
+  background: #102a25;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.35fr .8fr .8fr 1fr;
+  gap: 55px;
+  padding: 75px 0 60px;
+}
+
+.footer-brand img {
+  width: 185px;
+  padding: 10px;
+  background: #fff;
+}
+
+.footer-brand p {
+  max-width: 300px;
+  margin: 22px 0 0;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.footer-column h4 {
+  margin: 0 0 20px;
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  display: grid;
+  gap: 11px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-column li,
+.footer-column a {
+  color: rgba(255,255,255,.65);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.footer-column a:hover { color: #fff; }
+
+.footer-contact-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-contact-item span {
+  color: #efb4a7;
+  font-size: 15px;
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  border-top: 1px solid rgba(255,255,255,.12);
+}
+
+.footer-bottom-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 10px;
+}
+
+.footer-bottom a { color: #fff; }
+
+/* Floating actions */
+
+.whatsapp-float {
+  position: fixed;
+  right: 23px;
+  bottom: 23px;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  color: #fff;
+  background: #25D366;
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
+  transition: transform .2s ease;
+}
+
+.whatsapp-float:hover { transform: translateY(-4px); }
+.whatsapp-float svg { width: 25px; height: 25px; }
+
+/* Motion */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .65s ease, transform .65s cubic-bezier(.2,.7,.2,1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: .08s; }
+.reveal-delay-2 { transition-delay: .16s; }
+.reveal-delay-3 { transition-delay: .24s; }
+
+@keyframes hero-rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .service-nav-label { display: none; }
+  .service-nav-items { gap: 2px; }
+  .nav-service > button { font-size: 11px; padding-inline: 5px; }
+  .hero-inner { gap: 45px; }
+  .intro-grid { gap: 55px; }
+  .services-layout, .testimonial-layout, .faq-layout { gap: 50px; }
+  .footer-main { gap: 30px; }
+}
+
+@media (max-width: 900px) {
+  .utility-links { gap: 13px; }
+  .header-phone { display: none; }
+  .service-nav { display: none; }
+  .mobile-toggle { display: grid; place-items: center; }
+  .main-header-inner { min-height: 76px; }
+  .hero { min-height: auto; }
+  .hero-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .hero-form-wrap { padding: 25px; }
+  .hero h1 { font-size: clamp(38px, 6vw, 55px); }
+  .trust-number { font-size: 24px; }
+  .intro-grid { grid-template-columns: 1fr 1fr; gap: 35px; }
+  .solutions-grid { gap: 15px; }
+  .solution-card { min-height: 350px; }
+  .case-grid { grid-template-rows: 205px 205px; }
+  .services-layout { grid-template-columns: 1fr; gap: 35px; }
+  .services-intro, .faq-intro { position: static; }
+  .testimonial-layout, .faq-layout { grid-template-columns: 1fr; }
+  .testimonial-intro .section-heading { max-width: 600px; }
+  .footer-main { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .container { width: min(100% - 34px, var(--container)); }
+  .section { padding: 76px 0; }
+  .section-top { display: block; margin-bottom: 33px; }
+  .section-top > .text-link { margin-top: 20px; }
+  .section-heading { font-size: 34px; letter-spacing: -1.2px; }
+  .section-description { font-size: 14px; }
+
+  .utility-inner {
+    justify-content: center;
+    min-height: 39px;
+  }
+  .utility-message, .utility-links { display: none; }
+  .main-header-inner { min-height: 70px; }
+  .brand img { width: 155px; }
+
+  .mobile-menu {
+    position: fixed;
+    top: 109px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    display: block;
+    padding: 15px 22px 40px;
+    overflow-y: auto;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity .25s ease, transform .25s ease, visibility .25s ease;
+  }
+
+  body.menu-open .mobile-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .mobile-menu > a {
+    display: block;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink);
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .mobile-service {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .mobile-service > button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border: 0;
+    color: var(--ink);
+    background: transparent;
+    text-align: left;
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .mobile-submenu {
+    display: none;
+    padding: 0 0 12px 14px;
+  }
+
+  .mobile-service.open .mobile-submenu { display: block; }
+
+  .mobile-submenu a {
+    display: block;
+    padding: 7px 0;
+    color: #69747d;
+    font-size: 12px;
+  }
+
+  .mobile-submenu .mobile-parent-link {
+    color: var(--green);
+    font-weight: 700;
+  }
+
+  .mobile-menu .mobile-book {
+    display: block;
+    margin-top: 22px;
+    padding: 15px 18px;
+    border: 0;
+    color: #fff;
+    background: var(--red);
+    text-align: center;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 38px;
+    padding-top: 48px;
+    padding-bottom: 55px;
+  }
+
+  .hero-copy { order: 1; padding: 0; }
+  .hero-form-wrap { order: 2; max-width: none; padding: 25px 22px; }
+  .hero h1 { font-size: clamp(39px, 11vw, 53px); letter-spacing: -1.8px; }
+  .hero-quote { font-size: 13px; }
+  .hero-actions { gap: 20px; margin-top: 25px; }
+  .hero-actions .btn { min-height: 48px; padding-inline: 16px; }
+  .hero-bottom-note { margin-top: 27px; }
+  .hero-brand-mark { margin-bottom: 17px; }
+
+  .trust-inner { grid-template-columns: 1fr 1fr; padding: 14px 0; }
+  .trust-item {
+    justify-content: flex-start;
+    min-height: 68px;
+    padding: 10px 8px;
+  }
+  .trust-item:nth-child(2) { border-right: 0; }
+  .trust-item:nth-child(1), .trust-item:nth-child(2) { border-bottom: 1px solid var(--line); }
+  .trust-number { font-size: 24px; }
+
+  .intro-section { padding: 76px 0; }
+  .intro-grid { grid-template-columns: 1fr; gap: 40px; }
+  .intro-visual { min-height: 320px; }
+  .intro-visual img { height: 290px; }
+  .intro-stat { width: 145px; padding: 17px; }
+  .intro-stat strong { font-size: 30px; }
+  .intro-points { gap: 12px; }
+  .intro-point { font-size: 11px; }
+
+  .solutions-grid { grid-template-columns: 1fr; gap: 15px; }
+  .solution-card { min-height: 340px; }
+  .solution-card h3 { font-size: 24px; }
+
+  .case-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 280px 190px 190px;
+    gap: 12px;
+  }
+  .case-card:first-child { grid-column: span 2; grid-row: auto; }
+  .case-content { right: 14px; bottom: 14px; left: 14px; }
+  .case-content h3 { font-size: 16px; }
+  .case-card:first-child .case-content h3 { font-size: 24px; }
+
+  .services-list { grid-template-columns: 1fr; }
+  .service-item:nth-child(odd) { margin-right: 0; }
+  .service-item:nth-child(even) { padding-left: 0; border-left: 0; }
+  .service-item { min-height: 65px; }
+
+  .numbers-heading { margin-bottom: 35px; }
+  .numbers-grid { grid-template-columns: 1fr 1fr; }
+  .number-card {
+    min-height: 115px;
+    padding: 22px 12px 20px 0;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+  }
+  .number-card:not(:first-child) { padding-left: 17px; }
+  .number-card:nth-child(2) { border-right: 0; }
+  .number-card:nth-child(3) { padding-left: 0; border-bottom: 0; }
+  .number-card:nth-child(4) { border-right: 0; border-bottom: 0; }
+  .number-card strong { font-size: 36px; }
+  .number-card span { font-size: 11px; }
+
+  .testimonial-card { padding: 30px 23px; }
+  .testimonial-card blockquote { font-size: 17px; }
+  .testimonial-author { align-items: flex-start; }
+  .blog-grid { grid-template-columns: 1fr; gap: 18px; }
+  .blog-image { height: 220px; }
+  .blog-content h3 { min-height: auto; }
+
+  .faq-question { font-size: 13px; }
+  .faq-answer p { font-size: 12px; }
+
+  .final-cta { padding: 65px 0; }
+  .final-cta-inner { display: block; }
+  .final-cta .btn { margin-top: 25px; }
+
+  .footer-main { grid-template-columns: 1fr 1fr; gap: 38px 22px; padding: 55px 0 40px; }
+  .footer-brand { grid-column: span 2; }
+  .footer-brand p { max-width: 360px; }
+  .footer-bottom-inner { flex-direction: column; gap: 7px; }
+  .whatsapp-float { right: 15px; bottom: 15px; width: 49px; height: 49px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <a class="utility-phone" href="https://api.whatsapp.com/send/?phone=971525287259" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/>
+        </svg>
+        +971 52 528 7259
+      </a>
+      <span class="utility-message">Get Your Free Dubai Marketing Strategy Call</span>
+      <nav class="utility-links" aria-label="Main navigation">
+        <a href="https://datamysite.com">Home</a>
+        <a href="https://datamysite.com/services">Services</a>
+        <a href="https://datamysite.com/client-case-studies">Case Studies</a>
+        <a href="https://datamysite.com/blogs">Blogs</a>
+        <a href="https://datamysite.com/about-us">About Us</a>
+        <a href="https://datamysite.com/contact-us">Contact Us</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="main-header">
+    <div class="container main-header-inner">
+      <a href="https://datamysite.com" class="brand" aria-label="DataMySite home">
+        <img src="https://datamysite.com/public/assets/img/logo.png" alt="DataMySite">
+      </a>
+
+      <div class="header-actions">
+        <a class="header-phone" href="https://api.whatsapp.com/send/?phone=971525287259">
+          <small>Talk to our team</small>
+          <strong>+971 52 528 7259</strong>
+        </a>
+        <a class="btn btn-primary" href="#consultation">Book Now <span class="btn-arrow">↗</span></a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="service-nav" aria-label="Service navigation">
+    <div class="container service-nav-inner">
+      <span class="service-nav-label">Explore services</span>
+      <div class="service-nav-items">
+
+        <div class="nav-service">
+          <button type="button">Digital <span class="chevron"></span></button>
+          <div class="mega-menu single-column">
+            <div class="mega-group">
+              <a href="https://datamysite.com/digital-marketing">Digital Marketing</a>
+              <ul>
+                <li><a href="https://datamysite.com/digital-marketing/social-media-marketing">Social Media Marketing</a></li>
+                <li><a href="https://datamysite.com/digital-marketing/content-marketing">Content Creation &amp; Marketing</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-service">
+          <button type="button">Outdoor <span class="chevron"></span></button>
+          <div class="mega-menu single-column">
+            <div class="mega-group">
+              <a href="https://datamysite.com/outdoor-advertising">Outdoor Advertising</a>
+              <ul>
+                <li><a href="https://datamysite.com/outdoor-advertising/billboards-advertising">Billboards Advertising</a></li>
+                <li><a href="https://datamysite.com/outdoor-advertising/flyers-distribution">Flyers Distribution</a></li>
+                <li><a href="https://datamysite.com/outdoor-advertising/human-billboards">Human Billboards</a></li>
+                <li><a href="https://datamysite.com/outdoor-advertising/unipoles">Unipoles</a></li>
+                <li><a href="https://datamysite.com/outdoor-advertising/lamp-post">Lamp Post</a></li>
+                <li><a href="https://datamysite.com/outdoor-advertising/bridge-banners">Bridge Banners</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-service">
+          <button type="button">DOOH <span class="chevron"></span></button>
+          <div class="mega-menu single-column">
+            <div class="mega-group">
+              <a href="https://datamysite.com/digital-advertising">Digital Advertising</a>
+              <ul>
+                <li><a href="https://datamysite.com/digital-advertising/ott-advertising">OTT Advertising</a></li>
+                <li><a href="https://datamysite.com/digital-advertising/dooh-advertising">DOOH Advertising</a></li>
+                <li><a href="https://datamysite.com/digital-advertising/hotel-digital-screens-advertising">Hotel Digital Screens Advertising</a></li>
+                <li><a href="https://datamysite.com/digital-advertising/elevator-advertising">Elevator Advertising</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-service">
+          <button type="button">Influencer <span class="chevron"></span></button>
+          <div class="mega-menu single-column">
+            <div class="mega-group">
+              <a href="https://datamysite.com/influencer-marketing">Influencer Marketing</a>
+              <ul>
+                <li><a href="https://datamysite.com/influencer-marketing/nano-influencer">Nano Influencer</a></li>
+                <li><a href="https://datamysite.com/influencer-marketing/micro-influencer">Micro Influencer</a></li>
+                <li><a href="https://datamysite.com/influencer-marketing/macro-influencer">Macro Influencer</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-service">
+          <button type="button">SEO <span class="chevron"></span></button>
+          <div class="mega-menu">
+            <div class="mega-group">
+              <a href="https://datamysite.com/seo-services">SEO Services</a>
+              <ul>
+                <li><a href="https://datamysite.com/seo-services/local-seo">Local SEO</a></li>
+                <li><a href="https://datamysite.com/seo-services/abu-dhabi">SEO in Abu Dhabi</a></li>
+                <li><a href="https://datamysite.com/seo-services/seo-audit">SEO Audit</a></li>
+                <li><a href="https://datamysite.com/seo-services/technical-seo">Technical SEO</a></li>
+                <li><a href="https://datamysite.com/seo-services/ecommerce-seo">Ecommerce SEO</a></li>
+                <li><a href="https://datamysite.com/seo-services/ai-seo-geo">AI SEO Geo</a></li>
+              </ul>
+            </div>
+            <div class="mega-group">
+              <a href="https://datamysite.com/seo-services">More SEO solutions</a>
+              <ul>
+                <li><a href="https://datamysite.com/seo-services/arabic-seo">Arabic SEO</a></li>
+                <li><a href="https://datamysite.com/seo-services/seo-consultant">SEO Consultant</a></li>
+                <li><a href="https://datamysite.com/seo-services/small-business-seo">Small Business SEO</a></li>
+                <li><a href="https://datamysite.com/seo-services/case-studies">Case Studies</a></li>
+                <li><a href="https://datamysite.com/seo-services/price-and-package">Price &amp; Package</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-service">
+          <button type="button">Transit <span class="chevron"></span></button>
+          <div class="mega-menu">
+            <div class="mega-group">
+              <a href="https://datamysite.com/transit-media">Transit Media</a>
+              <ul>
+                <li><a href="https://datamysite.com/transit-media/airline-advertising">Airline Advertising</a></li>
+                <li><a href="https://datamysite.com/transit-media/taxi-advertising">Taxi Advertising</a></li>
+                <li><a href="https://datamysite.com/transit-media/bus-advertising">Bus Advertising</a></li>
+                <li><a href="https://datamysite.com/transit-media/metro-ads">Metro Ads</a></li>
+              </ul>
+            </div>
+            <div class="mega-group">
+              <a href="https://datamysite.com/transit-media">More transit media</a>
+              <ul>
+                <li><a href="https://datamysite.com/transit-media/airport-advertising">Airport Advertising</a></li>
+                <li><a href="https://datamysite.com/transit-media/boat-advertising">Boat Advertising</a></li>
+                <li><a href="https://datamysite.com/transit-media/tram-advertising">Tram Advertising</a></li>
+                <li><a href="https://datamysite.com/transit-media/truck-advertising">Truck Advertising</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-service">
+          <button type="button">Celebrity <span class="chevron"></span></button>
+          <div class="mega-menu single-column">
+            <div class="mega-group">
+              <a href="https://datamysite.com/celebrity-marketing">Celebrity Marketing</a>
+              <ul>
+                <li><a href="https://datamysite.com/celebrity-marketing/sport-personalities">Sports Personalities</a></li>
+                <li><a href="https://datamysite.com/celebrity-marketing/bollywood-celebrities">Bollywood Celebrities</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-service">
+          <button type="button">PR <span class="chevron"></span></button>
+          <div class="mega-menu single-column">
+            <div class="mega-group">
+              <a href="https://datamysite.com/public-relations-pr-coverage">Public Relations - PR Coverage</a>
+              <ul>
+                <li><a href="https://datamysite.com/public-relations-pr-coverage/gulf-news">Gulf News</a></li>
+                <li><a href="https://datamysite.com/public-relations-pr-coverage/forbes">Forbes</a></li>
+                <li><a href="https://datamysite.com/public-relations-pr-coverage/khaleej-time">Khaleej Time</a></li>
+                <li><a href="https://datamysite.com/public-relations-pr-coverage/arabian-news">Arabian News</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-service">
+          <button type="button">Leads <span class="chevron"></span></button>
+          <div class="mega-menu single-column">
+            <div class="mega-group">
+              <a href="https://datamysite.com/lead-generation">Lead Generation</a>
+              <ul>
+                <li><a href="https://datamysite.com/lead-generation/cost-per-lead">Cost-Per-Lead (CPL)</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-service">
+          <button type="button">Radio <span class="chevron"></span></button>
+          <div class="mega-menu single-column">
+            <div class="mega-group">
+              <a href="https://datamysite.com/radio-advertising">Radio Advertising</a>
+              <ul>
+                <li><a href="https://datamysite.com/radio-advertising/english-stations">English Stations</a></li>
+                <li><a href="https://datamysite.com/radio-advertising/arabic-stations">Arabic Stations</a></li>
+                <li><a href="https://datamysite.com/radio-advertising/hindi-urdu-stations">Hindi / Urdu Stations</a></li>
+                <li><a href="https://datamysite.com/radio-advertising/other-stations">Other Stations</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="https://datamysite.com">Home</a>
+    <a href="https://datamysite.com/services">All Services</a>
+    <a href="https://datamysite.com/client-case-studies">Case Studies</a>
+    <a href="https://datamysite.com/blogs">Blogs</a>
+    <a href="https://datamysite.com/about-us">About Us</a>
+    <a href="https://datamysite.com/contact-us">Contact Us</a>
+
+    <div class="mobile-service">
+      <button type="button">Digital <span class="chevron"></span></button>
+      <div class="mobile-submenu">
+        <a class="mobile-parent-link" href="https://datamysite.com/digital-marketing">Digital Marketing</a>
+        <a href="https://datamysite.com/digital-marketing/social-media-marketing">Social Media Marketing</a>
+        <a href="https://datamysite.com/digital-marketing/content-marketing">Content Creation &amp; Marketing</a>
+      </div>
+    </div>
+
+    <div class="mobile-service">
+      <button type="button">Outdoor <span class="chevron"></span></button>
+      <div class="mobile-submenu">
+        <a class="mobile-parent-link" href="https://datamysite.com/outdoor-advertising">Outdoor Advertising</a>
+        <a href="https://datamysite.com/outdoor-advertising/billboards-advertising">Billboards Advertising</a>
+        <a href="https://datamysite.com/outdoor-advertising/flyers-distribution">Flyers Distribution</a>
+        <a href="https://datamysite.com/outdoor-advertising/human-billboards">Human Billboards</a>
+        <a href="https://datamysite.com/outdoor-advertising/unipoles">Unipoles</a>
+        <a href="https://datamysite.com/outdoor-advertising/lamp-post">Lamp Post</a>
+        <a href="https://datamysite.com/outdoor-advertising/bridge-banners">Bridge Banners</a>
+      </div>
+    </div>
+
+    <div class="mobile-service">
+      <button type="button">DOOH <span class="chevron"></span></button>
+      <div class="mobile-submenu">
+        <a class="mobile-parent-link" href="https://datamysite.com/digital-advertising">Digital Advertising</a>
+        <a href="https://datamysite.com/digital-advertising/ott-advertising">OTT Advertising</a>
+        <a href="https://datamysite.com/digital-advertising/dooh-advertising">DOOH Advertising</a>
+        <a href="https://datamysite.com/digital-advertising/hotel-digital-screens-advertising">Hotel Digital Screens Advertising</a>
+        <a href="https://datamysite.com/digital-advertising/elevator-advertising">Elevator Advertising</a>
+      </div>
+    </div>
+
+    <div class="mobile-service">
+      <button type="button">Influencer <span class="chevron"></span></button>
+      <div class="mobile-submenu">
+        <a class="mobile-parent-link" href="https://datamysite.com/influencer-marketing">Influencer Marketing</a>
+        <a href="https://datamysite.com/influencer-marketing/nano-influencer">Nano Influencer</a>
+        <a href="https://datamysite.com/influencer-marketing/micro-influencer">Micro Influencer</a>
+        <a href="https://datamysite.com/influencer-marketing/macro-influencer">Macro Influencer</a>
+      </div>
+    </div>
+
+    <div class="mobile-service">
+      <button type="button">SEO <span class="chevron"></span></button>
+      <div class="mobile-submenu">
+        <a class="mobile-parent-link" href="https://datamysite.com/seo-services">SEO Services</a>
+        <a href="https://datamysite.com/seo-services/local-seo">Local SEO</a>
+        <a href="https://datamysite.com/seo-services/abu-dhabi">SEO in Abu Dhabi</a>
+        <a href="https://datamysite.com/seo-services/seo-audit">SEO Audit</a>
+        <a href="https://datamysite.com/seo-services/technical-seo">Technical SEO</a>
+        <a href="https://datamysite.com/seo-services/ecommerce-seo">Ecommerce SEO</a>
+        <a href="https://datamysite.com/seo-services/ai-seo-geo">AI SEO Geo</a>
+        <a href="https://datamysite.com/seo-services/arabic-seo">Arabic SEO</a>
+        <a href="https://datamysite.com/seo-services/seo-consultant">SEO Consultant</a>
+        <a href="https://datamysite.com/seo-services/small-business-seo">Small Business SEO</a>
+        <a href="https://datamysite.com/seo-services/case-studies">Case Studies</a>
+        <a href="https://datamysite.com/seo-services/price-and-package">Price &amp; Package</a>
+      </div>
+    </div>
+
+    <div class="mobile-service">
+      <button type="button">Transit <span class="chevron"></span></button>
+      <div class="mobile-submenu">
+        <a class="mobile-parent-link" href="https://datamysite.com/transit-media">Transit Media</a>
+        <a href="https://datamysite.com/transit-media/airline-advertising">Airline Advertising</a>
+        <a href="https://datamysite.com/transit-media/taxi-advertising">Taxi Advertising</a>
+        <a href="https://datamysite.com/transit-media/bus-advertising">Bus Advertising</a>
+        <a href="https://datamysite.com/transit-media/metro-ads">Metro Ads</a>
+        <a href="https://datamysite.com/transit-media/airport-advertising">Airport Advertising</a>
+        <a href="https://datamysite.com/transit-media/boat-advertising">Boat Advertising</a>
+        <a href="https://datamysite.com/transit-media/tram-advertising">Tram Advertising</a>
+        <a href="https://datamysite.com/transit-media/truck-advertising">Truck Advertising</a>
+      </div>
+    </div>
+
+    <div class="mobile-service">
+      <button type="button">Celebrity <span class="chevron"></span></button>
+      <div class="mobile-submenu">
+        <a class="mobile-parent-link" href="https://datamysite.com/celebrity-marketing">Celebrity Marketing</a>
+        <a href="https://datamysite.com/celebrity-marketing/sport-personalities">Sports Personalities</a>
+        <a href="https://datamysite.com/celebrity-marketing/bollywood-celebrities">Bollywood Celebrities</a>
+      </div>
+    </div>
+
+    <div class="mobile-service">
+      <button type="button">PR <span class="chevron"></span></button>
+      <div class="mobile-submenu">
+        <a class="mobile-parent-link" href="https://datamysite.com/public-relations-pr-coverage">Public Relations - PR Coverage</a>
+        <a href="https://datamysite.com/public-relations-pr-coverage/gulf-news">Gulf News</a>
+        <a href="https://datamysite.com/public-relations-pr-coverage/forbes">Forbes</a>
+        <a href="https://datamysite.com/public-relations-pr-coverage/khaleej-time">Khaleej Time</a>
+        <a href="https://datamysite.com/public-relations-pr-coverage/arabian-news">Arabian News</a>
+      </div>
+    </div>
+
+    <div class="mobile-service">
+      <button type="button">Leads <span class="chevron"></span></button>
+      <div class="mobile-submenu">
+        <a class="mobile-parent-link" href="https://datamysite.com/lead-generation">Lead Generation</a>
+        <a href="https://datamysite.com/lead-generation/cost-per-lead">Cost-Per-Lead (CPL)</a>
+      </div>
+    </div>
+
+    <div class="mobile-service">
+      <button type="button">Radio <span class="chevron"></span></button>
+      <div class="mobile-submenu">
+        <a class="mobile-parent-link" href="https://datamysite.com/radio-advertising">Radio Advertising</a>
+        <a href="https://datamysite.com/radio-advertising/english-stations">English Stations</a>
+        <a href="https://datamysite.com/radio-advertising/arabic-stations">Arabic Stations</a>
+        <a href="https://datamysite.com/radio-advertising/hindi-urdu-stations">Hindi / Urdu Stations</a>
+        <a href="https://datamysite.com/radio-advertising/other-stations">Other Stations</a>
+      </div>
+    </div>
+
+    <a class="mobile-book" href="#consultation">Book a Free Consultation ↗</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+
+      <div class="hero-form-wrap" id="consultation">
+        <span class="form-kicker">Let's talk about your next campaign</span>
+        <h2>Ready to Get Results?</h2>
+        <p class="form-intro">Drop us your details — our experts respond within 60 minutes.</p>
+
+        <form class="consultation-form" id="consultationForm">
+          <input class="form-field" type="text" name="name" placeholder="Your Full Name" aria-label="Your Full Name" required>
+
+          <div class="phone-field">
+            <span class="phone-code">🇦🇪 +971</span>
+            <input class="form-field" type="tel" name="phone" placeholder="50 123 4567" aria-label="Phone number" required>
+          </div>
+
+          <input class="form-field" type="email" name="email" placeholder="Your Email Address" aria-label="Your Email Address" required>
+
+          <textarea class="form-field" name="message" placeholder="Tell us what you need — the more detail, the better we can help." aria-label="Your message"></textarea>
+
+          <button class="form-submit" type="submit">Get Free Consultation <span class="btn-arrow">↗</span></button>
+        </form>
+
+        <p class="form-feedback" id="formFeedback" role="status">Thank you! Your details have been entered.</p>
+
+        <div class="form-trust">
+          <span><i></i>No spam, ever</span>
+          <span><i></i>Reply in 60 min</span>
+          <span><i></i>100% Private</span>
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <div class="hero-brand-mark">
+          <strong>D M S</strong>
+          <span></span>
+        </div>
+
+        <span class="hero-label">Dubai's integrated media partner</span>
+
+        <h1>Advertising &amp; Marketing <em>Agency</em> in Dubai</h1>
+
+        <p class="hero-quote">
+          <strong>“People do not buy goods and services.”</strong><br>
+          They buy relations, stories, and magic.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#consultation">Schedule a Call <span class="btn-arrow">↗</span></a>
+          <a class="hero-work-link" href="https://datamysite.com/client-case-studies">Our Work <span>↗</span></a>
+        </div>
+
+        <div class="hero-bottom-note">
+          <span class="note-line"></span>
+          <span><strong>20+ years</strong> of combined team experience</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROOF STRIP -->
+  <section class="trust-strip" aria-label="DataMySite results">
+    <div class="container trust-inner">
+      <div class="trust-item">
+        <strong class="trust-number">1219+</strong>
+        <span class="trust-label">Successful Projects</span>
+      </div>
+      <div class="trust-item">
+        <strong class="trust-number">20+</strong>
+        <span class="trust-label">Years Team Experience</span>
+      </div>
+      <div class="trust-item">
+        <strong class="trust-number">5+</strong>
+        <span class="trust-label">Winning Awards</span>
+      </div>
+      <div class="trust-item">
+        <strong class="trust-number">81+</strong>
+        <span class="trust-label">Satisfied Clients</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro-section">
+    <div class="container intro-grid">
+      <div class="intro-visual reveal">
+        <img src="https://datamysite.com/public/assets/img/service/1.png" alt="Outdoor advertising campaign">
+        <div class="intro-stat">
+          <strong>360°</strong>
+          <span>Marketing solutions under one roof</span>
+        </div>
+      </div>
+
+      <div class="intro-copy reveal reveal-delay-1">
+        <span class="eyebrow">Who we are</span>
+        <h2 class="section-heading">We make your brand impossible to ignore.</h2>
+        <p>
+          DataMySite is a Dubai-based advertising and marketing agency bringing brands closer to the audiences that matter. From high-impact outdoor placements to digital campaigns, we build connected marketing experiences.
+        </p>
+        <p>
+          Our approach combines creative thinking, media expertise and strategic execution to help businesses make a stronger impression in competitive markets.
+        </p>
+
+        <div class="intro-points">
+          <div class="intro-point"><span>✓</span> Integrated media planning</div>
+          <div class="intro-point"><span>✓</span> Local market expertise</div>
+          <div class="intro-point"><span>✓</span> Creative-led campaigns</div>
+          <div class="intro-point"><span>✓</span> Measurable outcomes</div>
+        </div>
+
+        <a class="btn btn-outline" href="https://datamysite.com/about-us">Discover DataMySite <span class="btn-arrow">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED SOLUTIONS -->
+  <section class="section solutions-section">
+    <div class="container">
+      <div class="section-top reveal">
+        <div>
+          <span class="eyebrow">What we do best</span>
+          <h2 class="section-heading">Ideas that move people. Campaigns that move brands.</h2>
+          <p class="section-description">Explore some of the ways we help businesses get noticed, build trust and reach the right audience.</p>
+        </div>
+        <a class="text-link" href="https://datamysite.com/services">Explore all services <span>↗</span></a>
+      </div>
+
+      <div class="solutions-grid">
+        <article class="solution-card reveal">
+          <img src="https://datamysite.com/public/assets/img/service/1.png" alt="Billboard advertising" loading="lazy">
+          <div class="solution-card-content">
+            <span class="solution-index">01 / OUTDOOR</span>
+            <h3>Billboards Advertising</h3>
+            <p>Make a bold impression in the places your audience travels every day.</p>
+            <a href="https://datamysite.com/outdoor-advertising/billboards-advertising">Explore service <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="solution-card reveal reveal-delay-1">
+          <img src="https://datamysite.com/public/assets/img/service/2.png" alt="Influencer marketing" loading="lazy">
+          <div class="solution-card-content">
+            <span class="solution-index">02 / INFLUENCER</span>
+            <h3>Influencer Marketing</h3>
+            <p>Connect your brand with creators and communities across the GCC.</p>
+            <a href="https://datamysite.com/influencer-marketing">Explore service <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="solution-card reveal reveal-delay-2">
+          <img src="https://datamysite.com/public/assets/img/service/3.png" alt="Public relations coverage" loading="lazy">
+          <div class="solution-card-content">
+            <span class="solution-index">03 / PUBLIC RELATIONS</span>
+            <h3>PR Coverage</h3>
+            <p>Build credibility and make your brand story heard in the right places.</p>
+            <a href="https://datamysite.com/public-relations-pr-coverage">Explore service <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section class="section case-section">
+    <div class="container">
+      <div class="section-top reveal">
+        <div>
+          <span class="eyebrow">Selected work</span>
+          <h2 class="section-heading">Real brands. Ambitious campaigns.</h2>
+          <p class="section-description">A look at some of the brands and campaigns we've had the opportunity to work with.</p>
+        </div>
+        <a class="text-link" href="https://datamysite.com/client-case-studies">View all case studies <span>↗</span></a>
+      </div>
+
+      <div class="case-grid">
+        <a class="case-card reveal" href="https://datamysite.com/client-case-studies">
+          <img src="https://datamysite.com/public/case-studies/cover/dubai-duty-free.jpg" alt="Dubai Duty Free campaign" loading="lazy">
+          <div class="case-content">
+            <small>Retail / Brand campaign</small>
+            <h3>Dubai Duty Free</h3>
+            <span class="case-more">View project ↗</span>
+          </div>
+        </a>
+
+        <a class="case-card reveal reveal-delay-1" href="https://datamysite.com/client-case-studies">
+          <img src="https://datamysite.com/public/case-studies/cover/danube.jpg" alt="Danube campaign" loading="lazy">
+          <div class="case-content">
+            <small>Real estate</small>
+            <h3>Danube</h3>
+            <span class="case-more">View project ↗</span>
+          </div>
+        </a>
+
+        <a class="case-card reveal reveal-delay-2" href="https://datamysite.com/client-case-studies">
+          <img src="https://datamysite.com/public/case-studies/cover/lenskart-p.png" alt="Lenskart campaign" loading="lazy">
+          <div class="case-content">
+            <small>Influencer campaign</small>
+            <h3>Lenskart</h3>
+            <span class="case-more">View project ↗</span>
+          </div>
+        </a>
+
+        <a class="case-card reveal reveal-delay-1" href="https://datamysite.com/client-case-studies">
+          <img src="https://datamysite.com/public/case-studies/cover/bnw.jpg" alt="BNW campaign" loading="lazy">
+          <div class="case-content">
+            <small>Real estate</small>
+            <h3>BNW Developments</h3>
+            <span class="case-more">View project ↗</span>
+          </div>
+        </a>
+
+        <a class="case-card reveal reveal-delay-2" href="https://datamysite.com/client-case-studies">
+          <img src="https://datamysite.com/public/assets/img/service/2.png" alt="Influencer marketing campaign" loading="lazy">
+          <div class="case-content">
+            <small>Digital / Influencer</small>
+            <h3>KSA Influencers</h3>
+            <span class="case-more">View project ↗</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="case-footer reveal">
+        <a class="btn btn-outline" href="https://datamysite.com/client-case-studies">See Our Work <span class="btn-arrow">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services-section">
+    <div class="container services-layout">
+      <div class="services-intro reveal">
+        <span class="eyebrow">Our capabilities</span>
+        <h2 class="section-heading">Everything your brand needs to stand out.</h2>
+        <p>From the first impression to the final conversion, bring your marketing activities together with one experienced team.</p>
+        <a class="text-link" href="https://datamysite.com/services">Explore our capabilities <span>↗</span></a>
+      </div>
+
+      <div class="services-list reveal reveal-delay-1">
+        <a class="service-item" href="https://datamysite.com/digital-marketing"><span>Digital Marketing</span><b>↗</b></a>
+        <a class="service-item" href="https://datamysite.com/outdoor-advertising"><span>Outdoor Advertising</span><b>↗</b></a>
+        <a class="service-item" href="https://datamysite.com/digital-advertising"><span>Digital Advertising</span><b>↗</b></a>
+        <a class="service-item" href="https://datamysite.com/influencer-marketing"><span>Influencer Marketing</span><b>↗</b></a>
+        <a class="service-item" href="https://datamysite.com"><span>Website Development</span><b>↗</b></a>
+        <a class="service-item" href="https://datamysite.com/seo-services"><span>SEO Services</span><b>↗</b></a>
+        <a class="service-item" href="https://datamysite.com/transit-media"><span>Transit Media</span><b>↗</b></a>
+        <a class="service-item" href="https://datamysite.com/celebrity-marketing"><span>Celebrity Marketing</span><b>↗</b></a>
+        <a class="service-item" href="https://datamysite.com/public-relations-pr-coverage"><span>Public Relations &amp; PR Coverage</span><b>↗</b></a>
+        <a class="service-item" href="https://datamysite.com"><span>Event Marketing</span><b>↗</b></a>
+        <a class="service-item" href="https://datamysite.com"><span>Sponsorships</span><b>↗</b></a>
+        <a class="service-item" href="https://datamysite.com/lead-generation"><span>Lead Generation</span><b>↗</b></a>
+        <a class="service-item" href="https://datamysite.com/radio-advertising"><span>Radio Advertising</span><b>↗</b></a>
+        <a class="service-item" href="https://datamysite.com"><span>Creative &amp; CGI Advertising</span><b>↗</b></a>
+        <a class="service-item" href="https://datamysite.com"><span>Experiential Marketing</span><b>↗</b></a>
+        <a class="service-item" href="https://datamysite.com"><span>Global Marketing</span><b>↗</b></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUMBERS -->
+  <section class="section numbers-section">
+    <div class="container numbers-inner">
+      <div class="numbers-heading reveal">
+        <span class="eyebrow">The numbers behind our work</span>
+        <h2>Experience, creativity and execution — working together.</h2>
+      </div>
+
+      <div class="numbers-grid">
+        <div class="number-card reveal">
+          <strong>87%</strong>
+          <span>Digital Media Buying</span>
+        </div>
+        <div class="number-card reveal reveal-delay-1">
+          <strong>96%</strong>
+          <span>OOH Media Buying</span>
+        </div>
+        <div class="number-card reveal reveal-delay-2">
+          <strong>80%</strong>
+          <span>Experiential Marketing</span>
+        </div>
+        <div class="number-card reveal reveal-delay-3">
+          <strong>GCC</strong>
+          <span>Regional campaign reach</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="section testimonials-section">
+    <div class="container testimonial-layout">
+      <div class="testimonial-intro reveal">
+        <span class="eyebrow">Client experiences</span>
+        <h2 class="section-heading">Good work speaks. Our clients say it better.</h2>
+        <p class="section-description">We're proud to build relationships that go beyond individual campaigns.</p>
+
+        <div class="google-rating">
+          <span class="google-g">G</span>
+          <div>
+            <strong>5.0 / 5.0</strong>
+            <small>46 Google reviews</small>
+          </div>
+          <span class="stars">★★★★★</span>
+        </div>
+      </div>
+
+      <article class="testimonial-card reveal reveal-delay-1">
+        <div class="quote-mark">“</div>
+        <blockquote>
+          DataMySite team delivered an outstanding campaign for our real estate project. The billboard placements on Sheikh Zayed Road were perfectly targeted and the results exceeded our expectations. Highly professional and responsive team!
+        </blockquote>
+        <div class="testimonial-author">
+          <div>
+            <strong>Ahmed Al Mansoori</strong>
+            <small>Client feedback</small>
+          </div>
+          <span class="stars">★★★★★</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="section blog-section">
+    <div class="container">
+      <div class="section-top reveal">
+        <div>
+          <span class="eyebrow">Ideas &amp; insights</span>
+          <h2 class="section-heading">A little more thinking behind better marketing.</h2>
+          <p class="section-description">Perspectives on advertising, media and the changing marketing landscape in the UAE.</p>
+        </div>
+        <a class="text-link" href="https://datamysite.com/blogs">Visit our blog <span>↗</span></a>
+      </div>
+
+      <div class="blog-grid">
+        <article class="blog-card reveal">
+          <div class="blog-image">
+            <img src="https://datamysite.com/public/assets/img/service/1.png" alt="Marketing budget planning" loading="lazy">
+            <span class="blog-date">26 OCT 2026</span>
+          </div>
+          <div class="blog-content">
+            <small>Marketing strategy</small>
+            <h3>Marketing Budget Benchmarks for Dubai Businesses in 2026</h3>
+            <a href="https://datamysite.com/blogs">Read article ↗</a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal reveal-delay-1">
+          <div class="blog-image">
+            <img src="https://datamysite.com/public/assets/img/service/2.png" alt="Advertising agency insights" loading="lazy">
+            <span class="blog-date">26 OCT 2026</span>
+          </div>
+          <div class="blog-content">
+            <small>Industry insights</small>
+            <h3>Top Advertising Agencies in Dubai (2026): Who Does What Best</h3>
+            <a href="https://datamysite.com/blogs">Read article ↗</a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal reveal-delay-2">
+          <div class="blog-image">
+            <img src="https://datamysite.com/public/assets/img/service/3.png" alt="Influencer and celebrity marketing" loading="lazy">
+            <span class="blog-date">26 OCT 2026</span>
+          </div>
+          <div class="blog-content">
+            <small>Influencer marketing</small>
+            <h3>Influencer vs Celebrity Marketing: Which Wins in the UAE</h3>
+            <a href="https://datamysite.com/blogs">Read article ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section">
+    <div class="container faq-layout">
+      <div class="faq-intro reveal">
+        <span class="eyebrow">Have questions?</span>
+        <h2 class="section-heading">A few things you might want to know.</h2>
+        <p>Find quick answers about our services and how we approach campaigns. Still have a question? Our team is happy to help.</p>
+        <a class="text-link" href="https://datamysite.com/contact-us">Talk to our team <span>↗</span></a>
+      </div>
+
+      <div class="faq-list reveal reveal-delay-1">
+        <div class="faq-item active">
+          <button class="faq-question" type="button" aria-expanded="true">
+            What services does DataMySite offer?
+            <span class="faq-plus"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>DataMySite offers integrated marketing and advertising services including outdoor advertising, digital marketing, DOOH, influencer marketing, transit media, SEO, PR coverage, lead generation and more.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            Can you plan campaigns across the UAE?
+            <span class="faq-plus"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Our team works with brands on campaigns across the UAE and wider GCC market. The right locations and channels depend on your audience, objectives and campaign requirements.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            Do you provide outdoor and digital advertising together?
+            <span class="faq-plus"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Yes. We offer a range of outdoor, digital and media services, allowing businesses to plan connected campaigns across multiple channels.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            How can I request a marketing proposal?
+            <span class="faq-plus"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Use the consultation form on this page or contact our team directly. Share your business goals and the type of campaign you have in mind so the team can understand your requirements.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            Do you work with businesses of different sizes?
+            <span class="faq-plus"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>We work across different industries and campaign types. The scope and approach can be shaped around the business, audience and objectives.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="container final-cta-inner">
+      <div class="reveal">
+        <span class="eyebrow">Your next campaign starts here</span>
+        <h2>Make your next move a memorable one.</h2>
+        <p>Smarter marketing. Better outcomes. Let's build something that gets noticed.</p>
+      </div>
+      <a class="btn btn-primary reveal reveal-delay-1" href="#consultation">Schedule Your Appointment <span class="btn-arrow">↗</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div class="footer-brand">
+      <a href="https://datamysite.com">
+        <img src="https://datamysite.com/public/assets/img/logo.png" alt="DataMySite">
+      </a>
+      <p>Connecting brands with audiences through creative thinking, strategic media and integrated advertising solutions.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="https://datamysite.com/about-us">About Us</a></li>
+        <li><a href="https://datamysite.com/services">Our Services</a></li>
+        <li><a href="https://datamysite.com/client-case-studies">Case Studies</a></li>
+        <li><a href="https://datamysite.com/blogs">Blogs</a></li>
+        <li><a href="https://datamysite.com/contact-us">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="https://datamysite.com/outdoor-advertising">Outdoor Advertising</a></li>
+        <li><a href="https://datamysite.com/digital-marketing">Digital Marketing</a></li>
+        <li><a href="https://datamysite.com/influencer-marketing">Influencer Marketing</a></li>
+        <li><a href="https://datamysite.com/seo-services">SEO Services</a></li>
+        <li><a href="https://datamysite.com/transit-media">Transit Media</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Get in touch</h4>
+      <div class="footer-contact-item">
+        <span>↗</span>
+        <a href="https://api.whatsapp.com/send/?phone=971525287259">+971 52 528 7259</a>
+      </div>
+      <div class="footer-contact-item">
+        <span>✉</span>
+        <a href="mailto:contact@datamysite.com">contact@datamysite.com</a>
+      </div>
+      <div class="footer-contact-item">
+        <span>⌖</span>
+        <span>Office 205, Al Bayan Building, Dubai Investment Park, Dubai, UAE</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span>Copyright © DataMySite 2026. All Rights Reserved.</span>
+      <span>Powered By <a href="https://datamysite.com">Dar Alafkar Marketing LLC</a></span>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://api.whatsapp.com/send/?phone=971525287259" target="_blank" rel="noopener" aria-label="Chat with DataMySite on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M20.52 3.48A11.86 11.86 0 0 0 12.08 0C5.5 0 .15 5.35.15 11.93c0 2.1.55 4.15 1.6 5.96L0 24l6.27-1.64a11.9 11.9 0 0 0 5.8 1.48h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.19-3.49-8.43ZM12.08 21.8h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.72.97.99-3.63-.24-.37a9.85 9.85 0 0 1-1.51-5.25c0-5.47 4.45-9.92 9.92-9.92a9.86 9.86 0 0 1 7.02 2.91 9.86 9.86 0 0 1 2.9 7.02c0 5.47-4.45 9.92-9.95 9.92Zm5.44-7.43c-.3-.15-1.77-.87-2.05-.97-.28-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.8-1.49-1.78-1.66-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.09 4.49.71.3 1.27.49 1.7.62.71.22 1.36.19 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/>
+  </svg>
+</a>
+
+<script>
+/* Mobile navigation */
+const mobileToggle = document.getElementById("mobileToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+
+function closeMobileMenu() {
+  document.body.classList.remove("menu-open");
+  mobileToggle.setAttribute("aria-expanded", "false");
+  mobileToggle.setAttribute("aria-label", "Open navigation");
+  mobileToggle.innerHTML = `
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+      <path d="M4 7h16M4 12h16M4 17h16"/>
+    </svg>`;
+}
+
+mobileToggle.addEventListener("click", () => {
+  const isOpen = document.body.classList.toggle("menu-open");
+  mobileToggle.setAttribute("aria-expanded", String(isOpen));
+  mobileToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+
+  mobileToggle.innerHTML = isOpen
+    ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>`
+    : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>`;
+});
+
+document.querySelectorAll(".mobile-service > button").forEach(button => {
+  button.addEventListener("click", () => {
+    const parent = button.closest(".mobile-service");
+    const wasOpen = parent.classList.contains("open");
+
+    document.querySelectorAll(".mobile-service").forEach(item => {
+      item.classList.remove("open");
+      item.querySelector("button").setAttribute("aria-expanded", "false");
+    });
+
+    if (!wasOpen) {
+      parent.classList.add("open");
+      button.setAttribute("aria-expanded", "true");
+    }
+  });
+});
+
+mobileMenu.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", closeMobileMenu);
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 900) closeMobileMenu();
+});
+
+/* Desktop dropdowns: click support for touch devices */
+document.querySelectorAll(".nav-service > button").forEach(button => {
+  button.addEventListener("click", event => {
+    event.stopPropagation();
+    const parent = button.closest(".nav-service");
+    const shouldOpen = !parent.classList.contains("is-open");
+
+    document.querySelectorAll(".nav-service").forEach(item => {
+      item.classList.remove("is-open");
+      item.querySelector("button").setAttribute("aria-expanded", "false");
+    });
+
+    if (shouldOpen) {
+      parent.classList.add("is-open");
+      button.setAttribute("aria-expanded", "true");
+    }
+  });
+});
+
+document.addEventListener("click", event => {
+  if (!event.target.closest(".nav-service")) {
+    document.querySelectorAll(".nav-service").forEach(item => {
+      item.classList.remove("is-open");
+      item.querySelector("button").setAttribute("aria-expanded", "false");
+    });
+  }
+});
+
+/* FAQ accordion */
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const item = button.closest(".faq-item");
+    const wasActive = item.classList.contains("active");
+
+    document.querySelectorAll(".faq-item").forEach(faq => {
+      faq.classList.remove("active");
+      faq.querySelector(".faq-question").setAttribute("aria-expanded", "false");
+    });
+
+    if (!wasActive) {
+      item.classList.add("active");
+      button.setAttribute("aria-expanded", "true");
+    }
+  });
+});
+
+/* Lightweight scroll reveal */
+const revealElements = document.querySelectorAll(".reveal");
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if ("IntersectionObserver" in window && !reduceMotion) {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: "0px 0px -35px 0px"
+  });
+
+  revealElements.forEach(element => revealObserver.observe(element));
+} else {
+  revealElements.forEach(element => element.classList.add("is-visible"));
+}
+
+/* Frontend-only form interaction */
+document.getElementById("consultationForm").addEventListener("submit", event => {
+  event.preventDefault();
+  const feedback = document.getElementById("formFeedback");
+  feedback.classList.add("visible");
+});
+</script>
+
+</body>
+</html>
